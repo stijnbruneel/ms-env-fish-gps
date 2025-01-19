@@ -1,0 +1,1014 @@
+
+\documentclass[jmse,article,accept,moreauthors,pdftex]{Definitions/mdpi} 
+
+%=================================================================
+\firstpage{1} 
+\makeatletter 
+\setcounter{page}{\@firstpage} 
+\makeatother
+\pubvolume{1}
+\issuenum{1}
+\articlenumber{0}
+\pubyear{2021}
+\copyrightyear{2021}
+\externaleditor{{Academic Editor: Francesco Tiralongo} %MDPI: Please add Academic Editor. 
+}
+\datereceived{} 
+\dateaccepted{} 
+\datepublished{} 
+\hreflink{https://doi.org/} % Please use \linebreak if need to do line break
+%------------------------------------------------------------------
+% The following line should be uncommented if the LaTeX file is uploaded to arXiv.org
+%\pdfoutput=1
+
+%Prevents that citations cross the margin of the manuscript
+\usepackage{breakcites}
+
+\usepackage{amsmath}
+\usepackage[colorinlistoftodos]{todonotes}
+
+%%Floatbarrier prevents figures to be above section title 
+\usepackage{placeins}
+
+%% The graphicx package provides the includegraphics command.
+\usepackage{graphicx}
+%% The amssymb package provides various useful mathematical symbols
+
+%%Allows text in equations
+\usepackage{amssymb}
+%%Make sure caption does not stick to the table
+\usepackage{caption} \captionsetup[table]{skip=10pt}
+%%Multiple rows in complex tables
+\usepackage{multirow}
+
+%%Two figures aside
+\usepackage{caption}
+\usepackage{subcaption}
+
+%%Forced line break within cell
+\usepackage{makecell}
+\renewcommand\theadalign{bc}
+\renewcommand\theadfont{\bfseries}
+\renewcommand\theadgape{\Gape[4pt]}
+\renewcommand\cellgape{\Gape[4pt]}
+
+%% The amsthm package provides extended theorem environments
+%% \usepackage{amsthm}
+
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+%\usepackage{floatrow}
+
+%Packages for running title
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+
+%% The lineno packages adds line numbers. Start line numbering with
+%% \begin{linenumbers}, end it with \end{linenumbers}. Or switch it on
+%% for the whole article with \linenumbers after \end{frontmatter}.
+\usepackage{lineno}
+
+%% Double space
+\usepackage{setspace}
+
+%\usepackage{moreverb} % for verbatim output
+
+%For tables
+\usepackage{colortbl}
+\usepackage{hhline}
+\usepackage{makecell}
+\newcolumntype{P}[1]{>{\centering\arraybackslash}p{#1}}
+
+%µg
+\usepackage{siunitx}
+
+% Glossary
+\usepackage[utf8]{inputenc}
+\usepackage{hyperref}
+\usepackage{glossaries}
+\usepackage{calc}
+\usepackage{booktabs}
+\usepackage{tabularx}% (for comparison)
+
+\Title{Assessing the Drivers behind the Structure and Diversity of Fish Assemblages Associated with Rocky Shores in the Galapagos Archipelago} %Attention AE/ME. The following layout issues have not been checked by the English Editing Department and must be carefully verified by the AE/Layout Department: All callout issues, bold usage of callouts, and references to callouts in the text. Correct callout usage in figures. Figure and Table layout issues. Footnote formatting and Glossaries have not been checked. En dash usage for negative values, en dash usage to indicate relationships, en dash usage to indicate bonds (especially in chemistry). The English Editing Department is not responsible for correct italic usage for genes, proteins and technical terminology. This responsibility belongs to the authors. The following are also not checked: spacing between numbers and units of measurement, ratios, en dashes for ranges, date and time formats, punctuation in equation lines, and less than/more than spacing (< >). Finally, capitalization and layout of titles/headings must be properly checked as well as ensuring 'Eq.' and 'Fig.' are properly spelled out, as these are layout issues.
+
+
+% MDPI internal command: Title for citation in the left column
+\TitleCitation{Assessing the Drivers behind the Structure and Diversity of Fish Assemblages Associated with Rocky Shores in the Galapagos Archipelago}
+
+\newcommand{\orcidauthorA}{0000-0002-8226-8080}
+
+\Author{{Stijn Bruneel} %Please carefully check the accuracy of names and affiliations.
+\,$^{1,2,\ast}$\orcidA{}, Wout Van Echelpoel\,$^{1}$, Long Ho\,$^{1}$, Heleen Raat\,$^{1}$, Amber Schoeters\,$^{1}$, Niels De Troyer\,$^{1}$, \mbox{Ratha Sor}\,$^{1,3}$, José {Ponton-Cevallos}%MDPI: This author is different from system. Please confirm. Answer: Here it is correct. When giving in the author names, I think there was an auto-correction for authors that already published before in mdpi. The author agrees to be referred to with the name as is mentioned here in the manuscript.
+\,$^{1,4,5}$, Ruth Vandeputte\,$^{1}$, Christine Van der heyden\,$^{6}$, Nancy De Saeyer\,$^{1}$, \mbox{Marie Anne Eurie Forio}\,$^{1}$, {Rafael Bermudez}%This author is different from system. Please confirm. Answer: idem to previous author name. 
+\,$^{5,7}$, {Luis Dominguez-Granda}%This author is different from system. Please confirm. Answer: idem to previous author name. 
+\,$^{8}$, Stijn Luca\,$^{9}$, Tom Moens\,$^{2}$ and \mbox{Peter Goethals}\,$^{1}$}
+
+\AuthorNames{Stijn Bruneel, Wout Van Echelpoel, Long Ho, Heleen Raat, Amber Schoeters, Niels De Troyer, Ratha Sor, José Ponton-Cevallos, Ruth Vandeputte, Christine Van der heyden, Nancy De Saeyer, Marie Anne Eurie Forio, Rafael Bermudez, Luis Dominguez-Granda, Stijn Luca, Tom Moens, Peter Goethals}
+
+% MDPI internal command: Authors, for citation in the left column
+\AuthorCitation{Bruneel, S.; Van Echelpoel, W.; Ho, L.; Raat, H.; Schoeters, A.; De Troyer, N.; Sor, R.; Ponton-Cevallos, J.; Vandeputte, R.; Van der heyden, C.; De Saeyer, N.; Forio, M.A.E.; Bermudez, R.; Dominguez-Granda, L.; Luca, S.; Moens, T.; Goethals, P.}
+%If this is Chicago journal, please change author citation format as: Lastname, Firstname, Firstname Lastname, and First-name Last-name.
+
+
+\address{%
+$^{1}$ \quad Department of Animal Sciences and Aquatic Ecology, Ghent University, Coupure Links 653, \mbox{9000 Ghent, Belgium}; Wout.VanEchelpoel@UGent.be (W.V.E.); Long.tuanho@UGent.be (L.H.); heleen\_raat@hotmail.com (H.R.); amber.schoeters@hotmail.com (A.S.); niels.detroyer@ugent.be (N.D.T.); sorsim.ratha@gmail.com (R.S.); josefernando.pontoncevallos@ugent.be (J.P.-C.); ruthvandeputte@hotmail.com (R.V.); nancy.desaeyer@ugent.be (N.D.S.); marie.forio@ugent.be (M.A.E.F.); peter.goethals@ugent.be (P.G.)\\
+$^{2}$ \quad Marine Biology Research Group, Ghent University, Krijgslaan 281, 9000 Ghent, Belgium; tom.moens@ugent.be\\
+$^{3}$ \quad Dean of Graduate School, Chea Sim University of Kamchaymear, No. 157, Preah Norodom Blvd, \mbox{{12156 Phnom Penh,} %Please add post code. Answer: It is added
+ Cambodia}\\
+$^{4}$ \quad Facultad de Ciencias de la Vida, Escuela Superior Politécnica del Litoral (ESPOL), Campus Gustavo Galindo, 09-01-5863 Guayaquil, Ecuador\\
+$^{5}$ \quad Galapagos Marine Research and Exploration, GMaRE. Joint ESPOL-CDF program, Charles Darwin Research Station, 200102 Galapagos Islands, Ecuador; jrbermud@espol.edu.ec\\
+$^{6}$ \quad {Department of Biosciences and Industrial Technology, Research Centre of Health and Water Technology, HOGENT, University of Applied Sciences and Arts}, %Please add the department/school/faculty/campus. Answer: we did
+Valentin Vaerwyckweg 1, 9000 Ghent, Belgium; christine.vanderheyden@hogent.be\\
+$^{7}$ \quad Facultad de Ingeniería Marítima y Ciencias del Mar, Escuela Superior Politécnica del Litoral (ESPOL), Campus Gustavo Galindo, 09-01-5863 Guayaquil, Ecuador\\
+$^{8}$ \quad Centro del Agua y Desarrollo Sustentable, Facultad de Ciencias Naturales y Matemáticas, Escuela Superior Politécnica del Litoral (ESPOL), Campus Gustavo Galindo, 09-01-5863 Guayaquil, Ecuador; ldomingu@espol.edu.ec\\
+$^{9}$ \quad Department of Data Analysis and Mathematical Modelling, Ghent University, Coupure Links 653, \mbox{9000 Ghent, Belgium}; stijn.luca@ugent.be}
+
+% Contact information of the corresponding author
+\corres{Correspondence: stijn.bruneel@ugent.be}
+
+%$^\ast$To whom correspondence should be addressed; E-mail: stijn.bruneel@ugent.be}
+
+% \abstract{Oceanic islands harbor unique yet fragile marine ecosystems that require evidence-based environmental management. Among these islands, the Galapagos archipelago is well known for its fish diversity, but the factors that structure communities within and between its islands remain poorly understood. In this study, water quality, physical habitats and geographical distance were assessed as potential predictors for the diversity and structure of fish assemblages. 
+% A repeated mobile video monitoring technique was applied at different spatial scales to monitor coastal fish assemblages of rocky habitats in the bays of Puerto Ayora (Santa Cruz island) and Puerto Velazco Ibarra (Floreana island). Niche information was collected by abiotic habitat assessment, entailing characterization of the physico-chemical water conditions (e.g., temperature and nutrient concentrations) and physical habitat composition (e.g., rock, vegetation and sand cover) through in situ measurements. 
+% Differences in the structure of fish assemblages between both islands were most likely driven by temperature and nutrient concentrations. In the relatively highly populated island Santa Cruz, the structure of fish assemblages was more affected by water conditions than physical habitats while the contrary was true for the more pristine area of Floreana. A wide variety of species with different geographical origins were distributed over the different islands, which indicates that most fish species are able to reach the islands of the archipelago. However, temperature gradients and elevated nutrient levels cause large differences in the structure of local fish assemblages. In addition, in Santa Cruz nutrient concentrations were negatively correlated with $\alpha$ diversity. 
+% Since pollution is a clear pressure on the fish assemblages of the Galapagos archipelago, environmental management of the coastal areas is of paramount importance. Although the study was limited to the Galapagos islands, the obtained results are still of great value for the many oceanic islands that are facing similar trends of increasing anthropogenic pressures.}
+
+\abstract{Oceanic islands harbor unique yet fragile marine ecosystems that require evidence-based environmental management. Among these islands, the Galapagos archipelago is well known for its fish diversity, but the factors that structure communities within and between its islands remain poorly understood. In this study, water quality, physical habitats and geographical distance were assessed as potential predictors for the diversity and structure of fish assemblages. Differences in the structure of fish assemblages of the two studied islands (Santa Cruz and Floreana) were most likely driven by temperature and nutrient concentrations. In the relatively highly populated island Santa Cruz, the structure of fish assemblages was more affected by water conditions than physical habitats while the contrary was true for the more pristine area of Floreana. A wide variety of species with different geographical origins were distributed over the different islands, which indicates that most fish species are able to reach the islands of the archipelago. However, temperature gradients and elevated nutrient levels cause large differences in the structure of local fish assemblages. In addition, in Santa Cruz nutrient concentrations were negatively correlated with $\alpha$ diversity. Since pollution is a clear pressure on the fish assemblages of oceanic islands, environmental management of the coastal areas is of paramount importance.}
+
+\keyword{coastal ecosystem; video monitoring; Tropical Eastern Pacific fish assemblage; Galapagos; water quality; anthropogenic pressure} %All article types: you may provide up to 8 
+%Comment: Galapagos is with a capital.
+
+\begin{document}
+
+%\doublespacing
+
+%%
+%% Start line numbering here if you want
+%%
+%\linenumbers
+
+%\include{Introduction} 
+%% main text
+\section{Introduction}
+\label{Introduction}
+
+% Our ability to predict the response of biological communities to changes in the environment such as increased pollution levels, climate change, habitat degradation or the construction of movement barriers, strongly depends on our understanding of ecological and biological species traits \citep{Costello2015}. 
+% Although fish are known to have preferences in terms of water conditions and physical habitats, species-environment relationships are often difficult to describe because of the different spatial scales over which different processes take place \citep{Robinson2011PushingOpportunities,Bruneel2018}. In addition, displacement within and between habitats may allow fish to be present in unsuitable habitats, while dispersal barriers and biotic interactions may hamper fish species from reaching and persisting in suitable habitats \citep{Heino2015,Meynard2013}. 
+
+% Although water conditions such as temperature \citep{Mora2003PatternsDiversity}, salinity and nutrients \citep{Mellin2019EnvironmentalFishes} in combination with habitat structure have been identified as major drivers of the structure and diversity of fish assemblages \citep{Komyakova2013RelativeCommunities}, spatial factors should not be overlooked \citep{Araujo2006,Bruneel2018}. For example, reef fish often exhibit a strong site fidelity \citep{Chapman2000MovementsBarbados} and isolated islands tend to harbor fewer species \citep{Cowen2006ScalingPopulations,Whittaker2001ScaleDiversity}. In addition, dispersal ranges of the larvae of different fish species often do not exceed 10 to 100 km \citep{Cowen2006ScalingPopulations,Cowen2009LarvalConnectivity}. However, marine species distribution models typically do not consider dispersal limitation because of the presumed greater potential for dispersion in marine systems compared to terrestrial and freshwater systems \citep{Mouton2007,Robinson2011PushingOpportunities}. 
+% In addition, because of oceanic currents it is often difficult to assess whether the structure of marine fish assemblages is more affected by dispersal limitation or by water conditions. This is because oceanic currents, which are vital for larvae dispersal and cause abrupt changes in environmental conditions, might act as either physical or physiological barriers respectively \citep{Gaylord2000TemperatureFlow}. For example, \cite{Sandin2008IslandFish} were not able to disentangle the effects of productivity, an environmental variable, and isolation, associated with dispersal limitation, on fish species richness due to their negative correlation. Therefore, studies that focus on a limited set of potential predictors without accounting for different confounding factors may yield questionable results. 
+
+Due to their isolated position, oceanic islands harbor some of the last near-pristine marine ecosystems and associated fish assemblages \citep{Sandin2008IslandFish,Friedlander2016MarineHotspots}. Anthropogenic pressures, such as fishery, pollution, and the introduction of invasive species, threaten, however, many of these already fragile marine communities, and sound evidence-based management is required to protect them from extinction \citep{Vitousek1988ChapterIslands,Wilson2010HabitatCommunities}. Among these oceanic islands, the Galapagos archipelago is key due to its exceptionally rich biodiversity and its role as stepping stone between the Tropical Eastern and Central Pacific \citep{Edgar2004,Quimbayo2019DeterminantsIslands}. %To enable sound management of the ecosystems of the Galapagos, insights in how the structure and diversity of the fish assemblages are affected by environmental factors and anthropogenic pressures is required. 
+Although the rich biodiversity of the Galapagos archipelago has been attributed to it being located at the intersection of multiple warm and cold ocean currents \citep{Palacios2004SeasonalInfluences}, it remains unclear what the drivers behind the diversity and structure of the local fish assemblages are. 
+
+The observed differences in the marine communities seem to coincide with sharp differences in environmental conditions, which have given rise to the delineation of multiple bio-geographical regions \citep{Harris1969BreedingIslands,Jennings1994TheArchipelago}. The strong regional divisions in fish assemblages observed by Edgar et al. (2004) were considered to reflect both the local environmental conditions and connectivity of fish larvae with external source regions, such as the Indo-Pacific, Panamic and Peruvian region \cite{Edgar2004}. However, at the same time, the high species richness on the far-northern isolated islands of Wolf and Darwin suggested high immigration rates and a strong connectivity of fish assemblages between the islands \citep{Edgar2004}. In the case of high inter-island connectivity, it is expected that fish are able to reach the different available habitats and that their prevalence is mainly determined by local environmental conditions, rather than by dispersal limitation. Based on differences in temperature, Harris (1969) identified five potential bio-geographical regions in the archipelago \cite{Harris1969BreedingIslands}, but these were significantly different from the regions proposed by Edgar et al. (2004), which were based on differences in the structure of fish and macroinvertebrate assemblages \cite{Edgar2004}. According to \mbox{Edgar et al. (2004)}, there was no sound evidence to subdivide the area east of Isabela and south of Marchena in the three zones suggested by Harris (1969) \cite{Edgar2004,Harris1969BreedingIslands}. Since the within-island biological variability of this Central-Southeastern zone was larger than the between-island biological variability \citep{Edgar2004}, local differences in environmental conditions, e.g., temperature and physical habitat characteristics, may indeed have been crucial to shape the observed fish assemblages. Nevertheless, studies that assess the effect of local environmental conditions have been few. Jennings et al. (1994) and Edgar et al. (2004) provided strong evidence for differences in fish assemblages, but they were unable to identify any relationships with environmental conditions due to lacking data \cite{Edgar2004,Jennings1994TheArchipelago}. \mbox{Llerena-Martillo et al. (2018)} combined visual census data with environmental measurements to study fish assemblages in mangrove ecosystems in Santa Cruz, but the number of sites and number of variables remained limited \cite{Llerena-Martillo2018FishReserve}.
+
+Besides natural stressors, anthropogenic pressures may also affect fish assemblages. During the last three decades, the Galapagos archipelago has been witnessing an increase in population, tourism, and waste production at an annual rate of 4.08, 6.71, and \mbox{4.02\%}, respectively, but good waste management procedures have not been evolving at the {same pace} %MDPI: Please confirm the ``Alava2014PollutionPerspectives''. Answer: I have been looking into this but could not find out why it is not working. In the version I sent the reference was found. It is not a crucial reference as all the information is actually also present in the other 4 references.
+ \citep{Fernandez2008CoastalIsland,Hardter2010WasteIslands,MinistryofTourismofEcuador2019Observatorio2019-09-12,Riascos-Flores2020PollutedEcuador}. Since pollution has been identified as a major threat to marine ecosystems~\citep{Boersma1999LimitingSolution}, understanding the drivers behind the structure of fish assemblages in the Galapagos archipelago is crucial to evaluate and/or propose conservation guidelines \citep{Mateus2019AnArchipelago}. 
+
+The aim of this study was to identify the factors responsible for patterns in diversity and the structure of fish assemblages on the rocky shores of the Central-Southeastern zone of the Galapagos archipelago. To this end, the coastal areas of two cities, significantly different in size, on two different islands were assessed using underwater video transects. 
+Difficulties in separating the effects of the potential drivers, i.e., dispersal limitation, water conditions and physical habitats, were partially circumvented by applying a multi-scale approach \citep{Thuiller2015}. First, dispersal limitation can prevent fish to track and respond to environmental differences and, therefore, can affect ecologically processes at a larger, more regional scale (>100 km) than environmental preferences \citep{Bruneel2018,Leibold2004,Leibold2017}. Second, the wide range of water conditions in the archipelago, which are the result of distinct oceanic currents and urbanization, are more likely to affect communities at a more intermediate scale \mbox{(\mbox{0.1--100 km}) \citep{Houvenaghel1978OceanographicIslands,Liu2014,Mateus2019AnArchipelago}.} Finally, the composition of physical habitats (e.g., sand and bare rock) seems to mainly vary at a relatively fine scale \citep{Okey2004AStrategies}, causing it to potentially affect communities at a more local scale (1--100 m). 
+A hierarchical multi-scale repeated-observations sampling design was used to collect biological data in the Central-Southeastern zone of the archipelago. These data were used to compare fish assemblages between islands, between locations and within locations. 
+
+Given the expected differences in variation and magnitude of anthropogenic pressures and environmental conditions between and within the islands of Santa Cruz and Floreana, we hypothesize that fish assemblage structure and diversity will differ accordingly and will be affected by different factors. We hypothesize that, in the highly populated bay of Santa Cruz, local anthropogenic pressures induce pronounced gradients in water conditions, which affect the structure and diversity of the fish assemblages. Fish diversity is expected to be negatively affected by human-induced changes of the water quality. In the sparsely populated bay of Floreana, we expect less pronounced gradients in water conditions and, therefore, a stronger effect of the composition of the physical habitat. 
+
+Although the main aim of this study was to determine the main factors that steer the fish assemblages of the Galapagos, the obtained results are also of direct use for the many other tropical oceanic islands that face increasing anthropogenic pressures. 
+
+% In Santa Cruz, local anthropogenic pressures are expected to cause a more pronounced difference in water conditions between 
+% We hypothesize that the presence of locations with stronger anthropogenic pressures in Santa Cruz, 
+% there is a pronounced gradient of anthropogenic pressures in Santa Cruz,
+% differences in fish assemblage structure within the highly populated island of Santa Cruz are more likely the result of water conditions   
+
+
+%\include{MaterialandMethods_Transectlevel_Median}   
+\section{Material and Methods}
+\label{MaterialandMethodsMedianMedia}
+
+\subsection{Data Collection and Sampling Design}
+
+Data collection included 540 observations distributed evenly among 10 locations on two islands. Two cities on two different islands within the Central-Southeastern zone of the Galapagos archipelago, which were expected to have significantly different levels of anthropogenic pollution, were selected: Puerto Ayora (Academy Bay) on Santa Cruz island and Puerto Velazco Ibarra on Floreana island. Puerto Velazco Ibarra is the smallest city of the archipelago with 111 inhabitants, while Puerto Ayora is the largest city with 11,822 inhabitants and the highest number of visiting tourists, according to a survey of \mbox{2015 \citep{INEC2015Censo2015}.} Per city, five locations with rocky habitats were chosen along the coast to use fixed video transects to study fish assemblages. Video transects were chosen over traditional visual census techniques, as the former allows us to (i) store video data for later analysis, (ii) reduce the amount of time spent on field work and (iii) improve the standardization of data collection \citep{Mallet2014,Wartenberg2015}. The fish data collection was based on a standard operation procedure developed by the Aquatic Ecology Research Group of Ghent University (see further). On each location, three transects with a length of 50 m each were laid out using ropes. For fish to be included, they had be recorded within 2.5 m of either side of the transect line (area = 50 $\times$ 5 = 250 m$^{2}$). Observers were trained to recognize whether fish had to be considered, depending on the estimated distance from the rope. All transects were monitored at a constant depth of 1.5 m, parallel to the coastline, and only locations with a limited exposure to waves were selected to guarantee the safety of the observers and to avoid predominant effects of wave exposure on the structure of fish assemblages. All transects were approximately 20 m apart. In practice, this meant that transects were placed next to each other along the coastline. To account for observer bias and sampling variability, each of these transects was recorded six consecutive times with single GoPro cameras (GoPro Hero 5 Black, 1080p, 60 fps, wide FOV%Please define if appropriate.
+) by three different observers equipped with a mask and snorkel. Hence, ten locations {×} %MDPI: Please confirm whether it should be changed to multiplication sign. Answer: It is indeed a multiplication. If you think using an explicit multiplication sign would be more appropriate, you can do so.
+ three transects {×} three observers {×} six repeats yielded 540 observations (18 per transect) (Figure S1.1). In summary, two islands, with five locations each, were studied. In each location, three transects were each covered six times by each of the three observers.
+
+The observers covered the transects in a browsing fashion, similar to the S-type transects introduced by Pelletier et al. (2011) \citep{Pelletier2011}. Observers browse through the transect at a fixed speed, but varying angle and can zoom in if needed to find individuals hiding in crevices. This S-transect was chosen over the more standarized I-transect with fixed angle and without zooming because the former had been found to enable detection of more individuals and species compared to the latter \citep{Pelletier2011}. Transects were placed during low tide and monitored during flood tide of consecutive days from the 19 until the 31 of August 2017. The duration of each observation was approximately 4.6 min ($\pm 0.7$ min). The time between each observation was at least one minute and subsequent observations were found independent in terms of diversity and assemblage structure ({Section S2}%MDPI: Please confirm the  Section S2. Answer: confirmed
+). Per day, one location was monitored. The analysis of the videos included species identification and an estimation of the number of individuals per species, determined as MaxCount, i.e., the total number of individuals per species per observation. The videos were analyzed once by one out of two video analysts; videos were assigned randomly to these analysts to reduce inter-observer bias \citep{Williams2006ImpactSurveys}. 
+
+Halfway the biological monitoring of a specific location, physical-chemical conditions were determined once using in situ measurements. In situ measurements were based on standard operation procedures developed in the Aquatic Ecology Research Group of Ghent University: Water temperature, acidity (pH), electrical conductivity (EC), dissolved oxygen (DO) and chlorophyll were measured with handheld multiprobes (WTW for temperature ($^{\circ}$C), pH (-) and DO concentration (mg L$^{-1}$); Aquaread (AP5000 version 4.07) for EC \mbox{(mS cm$^{-1}$)}, and chlorophyll (\SI{}{\micro\gram} L$^{-1}$)). Due to unstable measurements, chlorophyll concentrations were only used to compare average values of both islands and were not considered as a parameter in the constructed models. Nutrient concentrations of nitrite \mbox{(mg NO$_{2}^{-}$-N L$^{-1}$),} nitrate (mg NO$_{3}^{-}$-N L$^{-1}$), ammonium (mg NH$_{4}^{+}$-N L$^{-1}$), sulfate (\mbox{mg SO$_{4}^{2-}$ L$^{-1}$}), phosphate (mg PO$_{4}^{3-}$-P L$^{-1}$), total phosphorus (total P) (mg P L$^{-1}$), and total nitrogen (total N) (\mbox{mg N L$^{-1}$}) were determined spectrophotometrically (ThermoFisher %Include the city, two-letter state abbreviation (if applicable), and country of the manufacturer.
+Genesys 10S UV‐VIS) using Merck kits. Measurements that were below the detection limit, were given the value of the detection limit. This was only the case for ammonium concentrations in Floreana and at location B10 in Santa Cruz, which were given a value of \mbox{0.01 mg NH$_{4}^{+}$-N L$^{-1}$.} To assess how the anthropogenic influences differed between islands, in five locations in Floreana and three locations in Santa Cruz, the presence/absence of coliforms and \textit{Escherichia coli} was determined as a measure of fecal contamination. To assess the underlying causes of patterns in water quality (i.e., variability in natural conditions or variability in anthropogenic pollution) satellite imagery and simulations from remote sensing based models were used. Results suggested that Floreana has lower levels of anthropogenic pollution but more clear signs of natural upwelling than Santa Cruz. More information is provided in {Section S3.}% Please confirm the  section S3. Answer: confirmed
+
+For each transect, the percentage cover of different habitat classes (i.e., bare rock, rock with sediment deposition, vegetated rock and sand) was determined within 2.5 m of each side of the rope through visual inspection of the video data. Physical habitats are often complex and difficult to classify. Therefore, each transect was covered multiple times to assess how closely fish assemblages were associated with a specific (series of) micro-habitat(s). Since the scale and the intensity of the biological and environmental sampling differed, the biological data was aggregated to the level of transects (30 transects, i.e., 2 islands {×} %MDPI: Please confirm whether it should be changed to multiplication sign. Answer: It is indeed a multiplication. If you think using an explicit multiplication sign would be more appropriate, you can do so.
+ 5 locations {×} 3 transects) to fit the scale of the abiotic data before applying constrained ordination. In addition, because of the spatially nested nature of the data, the geographical distances between sampling units (i.e., transects) were at significantly different scales (i.e., between islands, between locations and between transects). Therefore, similarities between nearby locations and transects may be the result of the spatial structuring of species distributions rather than local environmental conditions \citep{Guisan2006,Kissling2008SpatialModels,Legendre1993SpatialParadigm}. This spatial structuring, which manifests itself in the data as spatial auto-correlation, was accounted for by explicitly integrating the geographical distance between the sampling units in the different models~\citep{Legendre1993SpatialParadigm}. 
+
+To aggregate the biological data within transects the median of the 18 observations per transect was chosen over the mean or maximum. Since fish tend to be very mobile, occasional observations of different species moving between locations, may yield questionable results. Using the median rather than the mean accounts for this bias, though it comes at a cost, since individuals of cryptic, rare, and easily scared species will also be less likely to be observed during multiple observations.
+
+\subsection{Data Analysis}
+
+All analyses were performed using the R software \citep{RCoreTeam2019R:Computing} and the Primer v6 multivariate statistics package \citep{Clarke2006PRIMERManual/Tutorial} with PERMANOVA add-on \citep{Anderson2008PERMANOVA+Methods}. In Figure S1.2, the data analysis roadmap is presented. 
+
+\subsubsection{Spatial Variability of Water Conditions and Habitats}
+\label{Methods:env_grouping}
+
+In this study, geographical distance, i.e., normalized longitude (X) and latitude (Y), was used to account for spatial auto-correlation and dispersal. The distances between the locations within one island were negligible compared to the distance between the two islands. Despite the aim of selecting locations at similar distances of each other, due to logistic constraints this was not always possible. In Floreana, the locations were more or less at equal distances from each other along the coast, but this was not the case for Santa Cruz, where locations were positioned within a bay, spatially clustering locations B2 and B3, as well as B9 and B10, while B6 was more isolated (Figure \ref{fig:MAP}). The average distance between locations for Santa Cruz and Floreana was 734 $\pm$ 544 m (SD) and 525 $\pm$ 397 m (SD), respectively. 
+
+The DISTance-based Linear Model (DISTLM) (see further) does not make any assumptions about the distributions of the covariables, but these distributions should nevertheless be appropriate for linear \mbox{modelling \citep{Anderson2008PERMANOVA+Methods,Legendre1999Distance-basedExperiments}.} Therefore, to assess whether distributions of covariables were not skewed or contained outliers, draftsman plots were constructed and analyzed. To deal with the detected skewness and outliers of some of the covariables, these were transformed before normalization (subtraction of mean and division by standard deviation). Nitrite, nitrate, ammonium, total N, total P, phosphate, and DO concentration were log(V) transformed and sulfate concentration was -log(2-V) transformed. Similarly, the cover of different habitat classes was often left or right skewed. Therefore, the percentage cover of the physical habitats was arcsine square root transformed prior to conducting the \mbox{analyses \citep{Gotelli2004AStatistics.}.} The resulting histograms and residual plots indicated a better fit compared to the case of no transformation (tested for all covariables) or logit transformation (tested for the cover of the habitat classes).
+
+Principal Component Analysis (PCA) was used to visually assess any potential grouping of the water variables and the physical habitats. Tests of homogeneity of dispersions (PERMDISP%Please define if appropriate.
+) based on Euclidean resemblance matrices of the physical habitats and water conditions allowed to determine and compare the variability of both series of environmental variables in both islands. Additional PERmutational Multivariate dissimilarity-based ANOVA (PERMANOVA) analyses allowed to assess whether physical habitats and water conditions were significantly different between islands and locations (nested in islands). The PERMANOVA analyses were done using 10$^{5}$ unrestricted permutations of the raw data. To compare the physical habitats of the islands, locations were considered as a random factor. To compare the physical habitats of the locations, one analysis was performed for both islands together. If both PERMANOVA and PERMDISP tests were found to be significant, additional Canonical Analysis of Principal coordinates (CAP) tests were used to assess the distinctiveness of the considered groups. 
+
+\begin{figure}[H]
+  %\centering
+  \includegraphics[scale=0.8]{MAP}
+  \caption{Map of the study area. (\textbf{A}) South-American continent with depiction of the Galapagos archipelago. (\textbf{B}) Galapagos archipelago with depiction of the two studied islands. (\textbf{C}) The city Puerto Ayora on Santa Cruz island with indication of the study locations. (\textbf{D}) The city Puerto Velazco Ibarra on Floreana island with indication of the study locations. Landsat 8 imagery was used to construct the maps.} 
+  \label{fig:MAP}
+\end{figure}
+
+\subsubsection{Fish $\alpha$ and $\beta$ Diversity}
+\label{sect:div}
+ 
+In literature, there have been many different definitions for both $\alpha$ diversity and $\beta$ diversity, underlining the importance of a clear description of the definition used in each study. In this study, we mainly adopted the definitions provided by Gray \mbox{(2000) \citep{Gray2000TheShelf}}, which are closely related to the original definitions provided by Whittaker \mbox{(1975) \citep{Whittaker1975CommunitiesEcosystems}.} The number of species observed per sampling unit is referred to as point species richness. Since it is unlikely that only one sampling unit would be representative for the entire study area, a sample typically comprises multiple sampling units within the area. The number of species found within a sample is referred to as sample species richness, which is more closely related to Whittaker's $\alpha$ diversity. In this study, the number of species observed during a single observation is defined as the point species richness, while the total number of species within an island, location or transect is referred to as the sample species richness. The sample species richness was assessed visually using Species Accumulation Curves (SACs) (10$^{5}$ permutations) for the different islands (n = 270 per island) and locations \mbox{(n = 54 per location)} (Section S10.1). %The footnote was moved to the text, please confirm: Answer: replaced to suppl.information.. 
+SACs depict the number of observed species with increasing sampling effort and are typically used to estimate the number of species in a particular area \citep{Magurran}. To statistically compare the sample species richness of islands and locations (Wilcoxon rank sum tests) and to assess correlations with environmental variables, respectively, the total number of observed species per location and transect (maximum sample species richness) were retained for analysis. To compare the point species richness of both islands, a linear mixed model with island as fixed effect, location and transects as nested random effects and observer as crossed random effect were constructed. To compare the point species richness of the locations, one analysis was performed for both islands together using a linear mixed model with location as fixed effect and transect and observer as nested and crossed random effects, respectively. 
+
+%$\beta$ diversity is broadly defined as the degree to which a set of samples in a given geographical area varies in the identities of the species they contain \citep{Whittaker1975CommunitiesEcosystems,Whittaker2001ScaleDiversity}. 
+Although $\beta$ diversity can be defined in numerous ways, in this study it is defined as the variability in species composition among samples for a given area at a given spatial scale \citep{Anderson2006MultivariateDiversity,Whittaker1975CommunitiesEcosystems,Whittaker2001ScaleDiversity}. Differences in $\beta$ diversity at the spatial scale of (1) islands and (2) locations were assessed using a PERMDISP test on the Sorensen resemblance matrix of the samples, in which a sample corresponds with the aggregated data of a single transect. The distance to centroid in a two-dimensional Principal Coordinate (PCO) space is considered a measure of $\beta$ diversity \citep{Anderson2006MultivariateDiversity}. To compare (1) islands and (2) locations, the centroids of the samples of (1) each island and of (2) each location were used, respectively. To assess if there were any relationships between environmental conditions and diversity, Pearson correlation coefficients (\textit{r}) of the diversity measures versus the transformed environmental variables were determined. 
+
+\subsubsection{Fish Assemblage Structure}
+\label{sect:struct}
+
+Differences in the structure of fish assemblages between islands are not necessarily the result of their position along an environmental gradient, but rather the result of fragmentation due to migration barriers, local extinction or colonization \citep{Whittaker1998IslandConservation,Whittaker2017IslandLaboratories}. Therefore, parametric methods, such as Multivariate dissimilarity-based ANOVA (MANOVA), PCA, CCA%Please define if appropriate.
+, and RDA%Please define if appropriate.
+, which assume an underlying environmental model of species distributions \citep{TerBraak1988AAnalysis}, are not appropriate. In addition, ecological data, especially those originating from visual census, are often overdispersed and zero-inflated, limiting the use of traditional parametric methods. On the other hand, purely non-parametric approaches, such as ANOSIM%Please define if appropriate.
+, are unable to partition variability, assess interactions or model more complex patterns \citep{Anderson2008PERMANOVA+Methods}. Semi-parametric multivariate techniques, such as PCO, PERMANOVA, CAP, and distance-based Redundancy Analysis (dbRDA), combine the advantages of both approaches and rely on the actual values of the resemblance matrix instead of relative ranks, but still use permutations rather than distributional assumptions \citep{Anderson2008PERMANOVA+Methods}. Nevertheless, by using the actual dissimilarity values instead of ranks, the choice of transformation, aggregation and measure of resemblance become more important \citep{Anderson2008PERMANOVA+Methods}. 
+
+The analyses were performed on the Bray-Curtis resemblance matrix of the original fourth-root transformed biological data set. Prior to applying PERMANOVA, a PERMDISP analysis was performed to test for homogeneity among the dispersions of the different islands and locations \citep{Anderson2015} (Section S10.2). %The footnote was moved to the text, please confirm. Answer: idem to previous footnote
+Although PERMANOVA is quite robust to heterogeneity of variances for balanced designs when compared to other methods, such as ANOSIM or the Mantel test \citep{Anderson2016}, significant differences in multivariate variability may complicate interpretations of PERMANOVA analyses. More specifically, if both PERMDISP and PERMANOVA yield significant results, there is not necessarily a significant discrepancy in the structure of the fish assemblages other than the difference in variability. Therefore, additional CAP discriminant analyses were applied to assess the distinctiveness in the structure of fish assemblages between the islands, locations and transects. The leave-one-out misclassification error was used as a measure of the distinctiveness of each of the~groups.
+
+To compare islands using PERMANOVA, the considered factors were island (fixed), location (random and nested within island), transect (random and nested within location) and observer (random and crossed). To compare locations using PERMANOVA, irrespective of the islands, the factor island was dropped and the factor location was treated as the fixed factor. The assessment of the main effects and pair-wise comparisons were obtained using 10$^{4}$ permutations of residuals under a reduced model. The square root components of variation ($\sigma^{'}$) were estimated by equating the mean squares of the PERMANOVA models to their expectations \citep{Anderson2008PERMANOVA+Methods}. To determine the proportion of the variability explained by the different grouping factors, the percentage of variation of each component to the total variation was used. PCO analyses were performed to visualize the multivariate patterns. The fish species that were characteristic for the differences among the islands and locations were found by superimposing vectors corresponding to Pearson correlations of individual species with the resulting PCO axes.
+
+CAP analyses were also performed to describe the correlation of the aggregated multivariate biological data to gradients of water variables, physical habitats and geographical distance. The first PCA axis, describing each series of variables, being habitat, water conditions and distance, was retained and plotted against the first CAP axis of the aggregated biological data set and the corresponding canonical correlation of both axes was~determined.
+
+To assess the relative importance and overlap of geographical distance, water conditions and physical habitats in shaping the observed fish assemblages, they were considered as separate subsets of variables in DISTance-based Linear Models (DISTLMs). While CAP finds linear combinations of the biotic and abiotic variables that are maximally correlated with one another, DISTLM finds linear combinations of the abiotic variables that are best to predict patterns in the biotic data set \citep{Anderson2008PERMANOVA+Methods}. As such, DISTLM models take into account the potential overlap of different predictors. Data was aggregated to the level of transects (median) and spatial auto-correlation was accounted for by explicitly integrating geographical distance. Because the number of spatial variables was limited compared to the number of variables of the other two series, the polynomials up to 3rd order of the coordinates, i.e., X (longitude) and Y (latitude), were included, as well. Since the number of variables exceeded the amount of observations, no interactions were considered and subsets of variables were established for each series using forward selection based on the multivariate analogue to the small-sample-size corrected version of the Akaike Information Criterion (AICc) and sequential conditional distance-based Redundancy Analysis (dbRDA). To compare the series, ideally the number of variables per subset should be the same. However, the optimal number of variables based on the AICc can differ between the series. Therefore, the effect of including fewer or more variables was assessed and the variability of the results was evaluated ({Section S9}%MDPI:  Please confirm the Section S9. Answer: confirmed
+). These subsets were then compared using the AICc values, forward selection and sequential conditional dbRDA. Models were also constructed for all variables independent of the series they were assigned to, using forward selection. Finally, this approach was extended by assessing all possible combinations of variables to construct q-variable models with q ranging from one to six. 
+
+It is important to note that for the analyses that only considered biological data (i.e., PERMDISP, PERMANOVA, and CAP) the full biological data set was used (n = 540), while, for the analyses that considered both environmental and biological data (i.e., DISTLM and CAP-PCA), the aggregated biological data set was used (n = 30).
+
+%\include{Results_Transectlevel_Median}
+\section{Results}
+\label{Results}
+
+\subsection{Spatial Variability of Water Conditions and Habitats}
+
+There were significant differences between both islands (\textit{p} < 0.05; Wilcoxon rank sum test) in some of the measured water variables (Table S4.1). In Floreana, nitrite and sulfate concentrations were significantly higher, while, in Santa Cruz, ammonium concentrations, temperature, pH, and DO concentrations were significantly higher. Although not significant, nitrate, phosphate, total P and chlorophyll concentration were on average higher in Santa Cruz than in Floreana, while total N and EC were on average higher in Floreana. Although rocky habitats were targeted for the transects, sandy patches were often unavoidable and sand cover was significantly higher in Santa Cruz (the abiotic data is depicted visually in PCA plots (Figures S4.1--S4.3). PERMANOVA tests using all available water variables also highlighted significant differences in water quality between both islands \mbox{(\textit{p} < 0.05)}, and the lack of significant differences in distances to the centroids (PERMDISP tests) suggests that the significant PERMANOVA was due to true differences in multivariate water quality data rather than to differences in variability. However, when PERMANOVA was performed only on the selection of water parameters identified in Section \ref{Fishassemblagestructure} as potential drivers of the structure of fish assemblages (temperature, ammonium, phosphate, nitrite and sulfate concentration), both PERMANOVA and PERMDISP yielded significant results, showing a higher multivariate dispersion among locations in Santa Cruz than in Floreana and potentially questioning a significant island effect on the abiotic environment. However, the CAP leave-one-out cross-validation misclassification error was exactly 0\%, suggesting that both islands could still be perfectly distinguished from each other based on their water~parameters. 
+
+Similarly, PERMDISP tests indicated a significantly larger variability of the physical habitats among locations in Santa Cruz compared to Floreana. Here, PERMANOVA tests were only marginally significant (\textit{p} < 0.1), suggesting that there were no clear differences in habitat classes between both islands, in addition to the difference in variability. This was supported by the high CAP leave-one-out cross-validation misclassification error (20\%; note that a misclassification error of 50\% is expected by chance alone). Between locations, no significant differences were found for both PERMDISP and PERMANOVA.
+
+Coliforms and \textit{E. coli} were found more often in Santa Cruz than in Floreana (\mbox{Table S4.2}). In three out of three locations in Santa Cruz, both coliforms and \textit{E. coli} were found, while, in Floreana, the respective frequencies were three out of five and one out of five locations. 
+
+\FloatBarrier
+
+\subsection{Fish $\alpha$ and $\beta$ Diversity}
+
+The linear mixed models did not indicate any significant difference in point species richness between both islands (\textit{p} > 0.05). Similarly, Wilcoxon rank sum tests did not indicate any significant difference in sample species richness. The total amount of species recorded in Santa Cruz and Floreana was 39 and 33, respectively (Figure S5.1). There was a significant effect of the factor Location in the linear mixed models for the locations, irrespective of the islands. Pairwise comparisons with Tukey correction of these models revealed significantly higher point species richness in location B9 compared to locations C1, B3 and B6; and in location C4 compared to location B3. 
+
+$\beta$ diversity among locations was significantly larger in Santa Cruz than in Floreana \mbox{(\textit{p} < 0.05)}, indicating stronger variability in species composition in Santa Cruz (\mbox{Figure S5.2}). The distance-to-centroid for Santa Cruz was on average 31.8\% (SE of 2.4\%), while, for Floreana, it was only 17.5\% (SE of 2.4\%). Pairwise comparisons between locations, without correction for multiple comparisons, did only result in some marginally significant differences (\mbox{\textit{p} < 0.1}) in $\beta$ diversity. However, it should be noted that the number of transects per location was limited to three, impeding strong statements on potential differences between locations due to limited statistical power. The range of distance-to-centroid values was quite large, from 3.82\% to 27.63\%, but more data is required to assess the $\beta$ diversity at this fine spatial scale (Table S5.4 and Figure S5.2).
+
+There was only a limited amount of significant correlations between diversity measures and environmental variables. Nitrite concentration was negatively correlated with the sample species richness of locations in Floreana (\textit{r} = $-$0.96). In Santa Cruz, Total P concentration (\textit{r} = $-$0.94) and habitat class sediment deposition on rocks (\textit{r} = $-$0.91) were negatively correlated with point species richness, while EC was positively correlated \mbox{(\textit{r} = 0.94)} with point species richness (Table S5.2). Although not all types of nutrient concentrations showed significant correlations with point species richness and sample species richness, correlations between nutrient concentrations and point species richness and sample species richness were always negative in Santa Cruz. In Floreana, on the other hand, there were both positive and negative non-significant correlations between nutrient concentrations and point species richness and sample species richness. In Floreana, $\beta$~diversity was positively correlated with nitrate (\textit{r} = 0.91) (Table S5.3). In Santa Cruz, $\beta$~diversity was negatively correlated with DO (\textit{r} = $-$0.92) and sand cover (\textit{r} = $-$0.88). A~positive, but not significant (\textit{p} = 0.13), Pearson correlation (\textit{r} = 0.52) was found between $\beta$~diversity and physical habitat variability (Table S5.4). 
+
+\FloatBarrier
+
+\subsection{Fish Assemblage Structure}
+\label{Fishassemblagestructure}
+
+PERMDISP tests on the full biological data set indicated significant heterogeneity of multivariate dispersion at the level of islands, locations, and transects (\textit{p} < 0.05), but not at the level of the observers. Multivariate variability was significantly larger for Santa Cruz than for Floreana, as the average distance-to-centroid of Santa Cruz was \mbox{35.44\%} \mbox{(SE = 0.48\%)}, while, for Floreana, it was only 27.30\% (SE = 0.49\%). PERMANOVA models revealed significant effects at the level of islands and locations (\textit{p} < 0.05). Within the island of Santa Cruz, more significant differences (\textit{p} < 0.05) were found between locations (B10-B3; B10-B6; B10-B9; B3-B9; B6-B9) than between the locations of Floreana (C1--C4). The \textit{p}-values were not corrected since the permutation \textit{p}-values provide an asymptotically exact test of each individual null hypothesis of interest \citep{Anderson2008PERMANOVA+Methods} (Section S10.3). %The footnote was moved to the text, please confirm. Answer: idem previous footnote
+Because PERMDISP and PERMANOVA analyses both yielded significant results, there was not necessarily a significant difference in the structure of the fish assemblages in addition to the difference in variability. However, CAP discriminant misclassification errors were generally low, indicating that the locations and transects of both islands could be relatively well distinguished from each other. Hence, the structure of the fish assemblages differed between islands, locations and transects. Differences among locations and transects were clearer (i.e., had lower misclassification errors) at Santa Cruz than at Floreana \mbox{(Tables S8.1--S8.4)}. These results are clearly visualized in the PCO plot, where the fish assemblages of both islands were clearly separated \mbox{(Figure \ref{fig:PCO_Location_full})}, and where there is much more overlap among locations at Floreana than at Santa Cruz (Figures S7.1 and S7.2). In addition to the factors Island (Table S6.1: 57.09\%) and Location (12.47\%), the factor Transect also explained a substantial part of the variation (12.74\%), whereas the factor Observer alone explained a negligible fraction of the data variation (0.27\%). The interaction of Observer with the factors Island \mbox{(0.06\%)}, Location (2.97\%), and Transect (4.39\%) still never explained more than 7.5\% of the observed variation. In Santa Cruz, variability explained by the locations (38.05\%) was larger than the variability explained by the transects (28.72\%), while the opposite was true for Floreana (i.e., locations and transects explained 16.62\% and 17.60\% of the variation, respectively). 
+
+In both Santa Cruz and Floreana, Endemic, Peruvian, Indo-Pacific, Panamic, and widespread species were observed (Table S5.1). Using the correlations of the biological data with the first PCO axis, the differences between islands could be partly attributed to some typical species. For Santa Cruz, these included the Bullseye puffer fish (\textit{Sphoeroides annulatus}; \textit{r} = $-$0.62), Yellowtail damselfish (\textit{Microspathodon bairdii}; \textit{r} = $-$0.83) and Pacific spotfin mojarra (\textit{Eucinostomus dowii}; \textit{r} = $-$0.64), while, for Floreana, they comprised the Bravo clinid (\textit{Gobioclinus dendriticus}; \textit{r} = 0.56), Galapagos ringtail damselfish (\textit{Stegastes beebei}; \mbox{\textit{r} = 0.83}) and Chameleon wrasse (\textit{Halichoeres dispilus}; \textit{r} = 0.87). In Santa Cruz, the abundances of the Yellowtail damselfish and Pacific spotfin mojarra were positively correlated with DO and pH, while the abundances of the Bullseye puffer fish were positively correlated with phosphate and negatively correlated with EC. In Floreana, the abundance of the Galapagos ringtail damselfish was positively correlated with nitrite, while that of the Bravo clinid was negatively correlated with the percentage of bare rock and that of the Chameleon wrasse was positively correlated with phosphate. 
+
+\begin{figure}[H]
+ % \centering
+ \hspace{-6mm}
+  \includegraphics[scale=0.42]{PCO_with_species}
+  \caption{{Principal Coordinate (PCO) based on} %MDPI: Please change the hyphen to minus in picture. Answer: changed into minus sign
+ Bray-Curtis resemblance matrix with distinction of the different locations in Santa Cruz (locations B) and Floreana (locations C). The fish species with a Pearson correlation of more than 0.4 with the ordination axes are represented as vectors.} 
+  \label{fig:PCO_Location_full}
+\end{figure}
+
+\FloatBarrier
+
+The squared canonical correlations of PC1 with CAP1 indicate how well differences in the structure of fish assemblages can be explained by the water conditions, physical habitats and geographical distance. Compiling data of both islands, these correlations \mbox{(n = 30)} were quite high: 0.85, 0.66, and 0.90, respectively (Table \ref{can_correl_CAP_Transectlevel_Median}). At the level of individual islands, the squared correlations were 0.75, 0.76, and 0.36 for Santa Cruz (n = 15), while, for Floreana (n = 15), they were much lower: 0.03, 0.28, and 0.16, respectively. 
+
+When focusing on water conditions, the most parsimonious model that best explained fish community variation for both islands contained five variables: Temperature, ammonium, phosphate, nitrite and sulfate (q = 5). When focusing on the habitats, three variables were retained in the most parsimonious model: Cover of vegetated rock, bare rock and rock with sediment deposition (q = 3). When focusing on the geographical distance, Y and X$^{3}$ were retained in the most parsimonious model (q = 2). For Santa Cruz, total P and temperature (q = 2), cover of rock with sediment deposition (q = 1), and Y$^{3}$ X and Y (q = 3) were retained. For Floreana, nitrite (q=1), cover sand and bare rock (q = 2) and X$^{3}$ (q = 1) were retained (Table S9.1). 
+
+For the full data set, water conditions explained the largest share of the variation, followed by the geographical distance and physical habitats (marginal tests in Table \ref{DISTLMseries_Transectlevel_Median}). The sequential conditional tests indicated that the most parsimonious model contained only geographical distance. If geographical distance was not included, the most parsimonious model only comprised water conditions. Changing the number of variables per subset of each series (i.e., geographical distance, water conditions and physical habitats) did not change the order of importance of the series but did affect the number of series to be included in the parsimonious model (Table S9.3).
+
+Within each island, geographical distance was not included in the most parsimonious models (Table \ref{DISTLMseries_Transectlevel_Median}). Indeed, the sequential conditional tests for Floreana only retained physical habitats to explain the structure of the fish assemblages, while, for Santa Cruz, only water conditions were retained in the most parsimonious model. However, for Santa Cruz, the AICc of the model using solely geographical distance was only slightly higher (\mbox{$\Delta$AICc $\textless$ 2}). In addition, care should be taken when comparing these results, because the number of variables included in the subsets had an effect on the order and nature of the series retained in the parsimonious model of Santa Cruz (Table S9.2). If one instead of two variables per series were included, both physical habitat and geographical distance were added to the parsimonious model, but water conditions were left out (Table S9.2). For Floreana, there was no effect of the number of variables on the order or nature of included series. To visualize the outcomes of these models ordinations of their fitted values are represented in Figures S9.1, S9.3, S9.4, S9.6, and S9.7. As the main patterns of the unconstrained PCO ordination plots (Figures S9.2, S9.5, and S9.8) and constrained dbRDA plots are relatively similar ({comparing original values and fitted values, respectively} %The footnote was moved to the text, please confirm. Answer: the footnote is small and can therefore stay in the text.
+ \citep{Anderson2008PERMANOVA+Methods}), the models appear adequate to find and explain the most important patterns in the data. 
+
+
+%\input{can_correl_CAP_Transectlevel_Median}
+%\renewcommand{\arraystretch}{1.25}
+\begin{specialtable}[H]
+%\centering
+%\scriptsize
+\caption{Squared canonical correlations of the first Principal Component Analysis (PCA) axis (PC1) with the first Canonical Analysis of Principal (CAP) axis (CAP1) for the different series of variables: Water parameters (Water), physical habitats (Habitat), and geographical distances (XY) for both islands, together (n = 30) and separately (n = 15).}
+\label{can_correl_CAP_Transectlevel_Median}
+\setlength{\tabcolsep}{7.7mm}{
+\begin{tabular}{cccc}
+\toprule
+ \textbf{Variable Series}  & \textbf{Both Islands} & \textbf{Santa Cruz} & \textbf{Floreana}  \\ 
+\midrule
+~Water       & 0.85         & 0.75       & 0.03       \\ 
+~Habitat & 0.66         & 0.76       & 0.28       \\
+~XY       & 0.90         & 0.36       & 0.16       \\ 
+\bottomrule
+\end{tabular}}
+\end{specialtable}\unskip
+\renewcommand{\arraystretch}{1}
+
+
+%\input{DISTLMseries_Transectlevel_Median}
+%\renewcommand{\arraystretch}{1.5}
+% start a new page without indent 4.6cm
+%\clearpage
+\end{paracol}
+\nointerlineskip
+\begin{specialtable}[H]
+\widetable
+%\scriptsize
+\caption{Results of DISTance-based Linear Model (DISTLM) analyses using series of predictors (water parameters (Water), physical habitats (Habitat) and geographical distances (XY)). The optimal number of predictors per series was determined using the Akaike Information Criterion (AICc). For each marginal test, the AICc weights (w\textsubscript{AICc}) were also determined. Models were constructed for both islands, together (n = 30) and separately (n = 15).}
+\label{DISTLMseries_Transectlevel_Median}
+\setlength{\tabcolsep}{2.7mm}{
+\begin{tabular}{llcccccccc}
+\toprule
+\multirow{2}{*}{}                                                        & \multirow{2}{*}{\textbf{Variable Series}} & \multicolumn{5}{c}{\textbf{Marginal Tests}}  & \multicolumn{3}{c}{\textbf{Sequential Tests}}  \\ 
+%\cline{3-9}
+                                                                         &                               & \textbf{Pseudo-F} & \textbf{\emph{p}-Value}     & \textbf{R$^{2}$}  & \textbf{AICc} & \textbf{w\textsubscript{AICc}}  & \textbf{Pseudo-F} & \textbf{\emph{p}-Value}     & \textbf{Cum. R$^{2}$}        \\ 
+\midrule
+\multirow{3}{*}{\begin{tabular}[c]{@{}l@{}}Both \\islands \end{tabular}} & XY (q = 2)                      & 21.43    & 0.001 & 0.61     & 202.11 & 0.73 & 21.43    & 0.001 & 0.61                \\ 
+                                                                         & Water (q = 5)                   & 10.71    & 0.001 & 0.69     & 204.18 & 0.26     & /        & /     & /                   \\ 
+                                                                         & Habitat (q = 3)                 & 9.03     & 0.001 & 0.51     & 211.89 & 0.01    & /        & /     & /                   \\ 
+\midrule
+\multirow{3}{*}{\begin{tabular}[c]{@{}l@{}}Santa \\Cruz \end{tabular}}   & Water (q = 2)                   & 5.52     & 0.001 & 0.48     & 103.17 & 0.48 & 5.52     & 0.001 & 0.48                \\
+& XY (q = 3)                      & 4.95     & 0.001 & 0.58     & 103.96 & 0.32     & /        & /     & /                   \\ 
+                                                                         & Habitat (q = 1)                 & 4.91     & 0.001 & 0.27     & 104.97 & 0.20     & /        & /     & /                   \\ 
+                                                                         
+\midrule
+\multirow{3}{*}{Floreana}                                                & Habitat (q = 2)                 & 4.00     & 0.001 & 0.40     & 94.46 & 0.66 & 4.00     & 0.001 & 0.40                \\ 
+& XY (q = 1)                      & 1.74     & 0.144 & 0.12     & 97.06 & 0.18     & /        & /     & /                   \\
+                                                                         & Water (q = 1)                   & 1.56     & 0.187 & 0.11     & 97.24 & 0.16     & /        & /     & /                   \\ 
+                                                                         
+\bottomrule
+\end{tabular}
+}
+\end{specialtable}
+\begin{paracol}{2}
+%\linenumbers
+\switchcolumn
+
+\renewcommand{\arraystretch}{1}
+
+
+When no prior clustering of predictors in series (water conditions, physical habitats, or geographical coordinates) was done, a parsimonious model for the full data set contained the predictors Y, cover of rock with sediment deposition, temperature, ammonium concentration, and cover of vegetated rock (Table \ref{DISTLMallvariablesoutsideseries_Transectlevel_median}). For Santa Cruz, a two-variable model containing cover of rock with sediment deposition and temperature was considered best, while, for Floreana, a two variable model containing cover of sand and bare rock was~optimal.
+
+
+
+%\input{DISTLMallvariablesoutsideseries_Transectlevel_median}
+\renewcommand{\arraystretch}{1.25}
+% start a new page without indent 4.6cm
+%\clearpage
+\end{paracol}
+\nointerlineskip
+\begin{specialtable}[H]
+\widetable
+%\scriptsize
+\caption{Results of DISTLM analyses using all predictors, without grouping them in different series of variables. Predictors were selected using AICc. For both islands, together (n = 30) and separately (n = 15).}
+\label{DISTLMallvariablesoutsideseries_Transectlevel_median}
+\setlength{\tabcolsep}{3.1mm}{
+\begin{tabular}{llccccccc}
+\toprule
+\multirow{2}{*}{}                                                        & \multirow{2}{*}{\textbf{Variable}}                                                                & \multicolumn{3}{c}{\textbf{Marginal Tests}} & \multicolumn{4}{c}{\textbf{Sequential Tests}}  \\ 
+                                                                         &                                                                                          & \textbf{Pseudo-F} & \textbf{\emph{p}-Value}     & \textbf{R$^{2}$}          & \textbf{AICc} & \textbf{Pseudo-F} & \textbf{\emph{p}-Value}     & \textbf{Cum. R$^{2}$}        \\ 
+\midrule
+\multirow{5}{*}{\begin{tabular}[c]{@{}l@{}}Both \\islands \end{tabular}} & Y (latitude)                                                                                        & 32.81    & 0.001 & 0.54    &    204.89     & 32.81    & 0.001 & 0.54                \\ 
+                                                                         & \begin{tabular}[c]{@{}l@{}}Rock with\\sediment deposition \end{tabular} & 9.08     & 0.001 & 0.24      &   201.96    & 5.33     & 0.001 & 0.62                \\ 
+                                                                         & Temperature                                                                              & 19.37    & 0.001 & 0.41      &   200.09    & 4.25     & 0.001 & 0.67                \\ 
+                                                                         & Ammonium                                                                                 & 17.45    & 0.001 & 0.38     &   199.26     & 3.31     & 0.004 & 0.71                \\ 
+                                                                         & Vegetated rock                                                                           & 9.95     & 0.001 & 0.26     &    199.18    & 2.73     & 0.012 & 0.74                \\ 
+\midrule
+\multirow{2}{*}{\begin{tabular}[c]{@{}l@{}}Santa \\Cruz \end{tabular}}   & \begin{tabular}[c]{@{}l@{}}Rock with\\sediment deposition \end{tabular} & 4.91     & 0.001 & 0.27      &   104.97    & 4.91     & 0.002 & 0.27                \\ 
+                                                                         & Temperature                                                                              & 4.00     & 0.003 & 0.24      &   102.66    & 5.30     & 0.002 & 0.50                \\ 
+\midrule
+\multirow{2}{*}{Floreana}                                                & Sand                                                                                     & 3.94     & 0.003 & 0.23     &    94.97    & 3.94     & 0.004 & 0.23                \\ 
+                                                                         & Bare rock                                                                                & 3.31     & 0.011 & 0.20     &    94.47    & 3.34     & 0.023 & 0.40                \\
+\bottomrule
+\end{tabular}
+}
+\end{specialtable}\unskip
+\begin{paracol}{2}
+%\linenumbers
+\switchcolumn
+
+\renewcommand{\arraystretch}{1}
+
+
+\FloatBarrier
+
+
+%\include{Discussion_Transectlevel_Median}
+\section{Discussion}
+\label{Discussion}
+
+Although the $\alpha$ diversity, $\beta$ diversity, and structure of the fish assemblages were clearly different between both islands, elucidating the drivers of these differences is not evident because of the complex interplay of often intercorrelated environmental variables and spatially confounded factors (e.g., occurrences of natural upwelling and anthropogenic pollution) \citep{Legendre2012NumericalEcology,Robinson2011PushingOpportunities}. It is, however, advisable to consider such a large set of potential drivers as other metrics to characterize fish assemblages of similar islands in the Tropical Eastern Pacific have been found to be affected by multiple different environmental, biogeographical and anthropogenic factors \citep{Luiz2015CommunityVariables,Quimbayo2019DeterminantsIslands,Quimbayo2017UnusualPacific}. Nitrite, ammonium, sulfate, DO concentration, temperature, and pH were significantly different between both islands and sand cover was significantly higher within the transects of Santa Cruz. In addition, variability of the water conditions and physical habitats were both larger in Santa Cruz than in Floreana. Furthermore, Santa Cruz was characterized by strong anthropogenic pressures and little natural upwelling, while the contrary was true for Floreana. Because the series of variables were characterized by many correlations among their variables, there was no sound statistical ground to separate the effects of geographical distance, water quality and physical habitats on diversity and the structure of fish assemblages based on this observation alone. However, by collecting data over multiple scales, i.e., islands, locations, and transects, a more detailed assessment could be made \citep{Yackulic2016}.
+
+\subsection{Diversity}
+
+Although the point species richness and sample species richness did not seem to differ between the islands, the total number of species and $\beta$ diversity in Santa Cruz were higher than in Floreana. This suggests that on a habitat scale, i.e., within transects and within locations, the number of species may have been the same, but that the variability in species composition was larger in Santa Cruz than in Floreana. This is expected as the variability in observed water conditions and physical habitats of the different locations was also higher in Santa Cruz than in Floreana, and more different niches are more likely to harbor more different species \citep{Elith2009,Guisan2000}. In addition, the $\beta$ diversity did not differ significantly between the locations, which corroborates the absence of significant differences in the variability of physical habitats between the locations. However, it should be noted that the number of transects per location, and, therefore, the statistical power, was limited. The fact that the $\beta$ diversity of locations showed a weak positive correlation with physical habitat variability and that $\beta$ diversity of the islands seemed positively affected by the variability of water conditions and physical habitats, suggests that environmental conditions may be important for diversity on multiple spatial scales. Nevertheless, more fine-scale studies are required.
+
+In Santa Cruz, lower levels of $\alpha$ diversity (both point and sample species richness) were associated with higher nutrient concentrations, which is in line with the results of meta-analyses on the effects of anthropogenic pollution on marine communities \citep{Johnston2009ContaminantsMeta-analysis}. Nitrate and phosphate concentrations measured during this study in Santa Cruz were found to be four and two times higher than those recorded in June 2007 \citep{Palacios2009Estudio2007.} and eight and seven times higher than those recorded in 1968 \citep{Houvenaghel1978OceanographicIslands}, underlining the increasing risk fish communities are facing. In addition, Mateus et al. (2019) found some strong relationships between population increase and nutrient concentrations in coastal sites of Santa Cruz during a 9-year study period \citep{Mateus2019AnArchipelago}. However, whether the underlying cause behind elevated nutrient concentrations is natural or man-made remains often hard to determine. This is especially the case for the hydrodynamically complex area of the Galapagos archipelago, being subject to local upwelling of cold, saline, nutrient rich waters originating from the eastward Cromwell current \citep{Houvenaghel1978OceanographicIslands,Mateus2019AnArchipelago,Schaeffer2008PhytoplanktonMeasurements}. A combination of satellite imagery, remote sensing based models and in situ nutrient measurements indicated that Floreana was characterized by strong natural upwelling, while high nutrient concentrations in Santa Cruz were more likely the result of anthropogenic pollution ({Section S3.3}%MDPI: Please confirm the Section S3.3. Answer: confirmed
+). This result corroborates results of earlier studies \citep{Mateus2019AnArchipelago,Werdeman2006EffectsBays}. Furthermore, the fact that fecal coliforms and \textit{E. coli} were found more often in the coastal waters of Puerto Ayora, indicates a stronger anthropogenic pollution compared to Floreana \citep{Fernandez2008CoastalIsland,Stumpf2013InvestigatingEcuador}.
+
+%observed in locations with higher nutrient concentrations, which are most likely the result of anthropogenic pressures. The increased nutrient concentrations in combination with high water temperatures are likely to benefit primary production in Santa Cruz, explaining the relatively high chlorophyll concentrations. This increased primary production is likely to benefit competitively superior species, causing their disproportionate dominance over other species and negative effect on diversity \citep{Johnston2009ContaminantsMeta-analysis}. 
+% as meta-analyses of studies on marine communities already suggested \citep{Johnston2009ContaminantsMeta-analysis}. 
+% Although measured nutrient concentrations between the islands did not differ much, primary production is likely to be different. the low temperature in Floreana is likely to limit primary production (explaining the relatively low chlorophyll concentrations), the high temperature in combination  The high nutrient concentrations in combination with high temperature, might result in a higher primary productivity and a disproportionate presence of competitively superior species. 
+
+\subsection{Structure of Fish Assemblages}
+
+\subsubsection{Characteristic Species}
+
+DO and pH were significantly higher in Santa Cruz and seemed to have a positive effect on the abundance of the two most typical species from Santa Cruz, the Yellowtail Damselfish and the Pacific Spottedfin Mojarra. Hence, the absence of these species in Floreana may be related to the lower DO and pH. However, the abundances of the two most typical species of Floreana, the Galapagos Ringtail Damselfish and Chameleon Wrasse, were correlated only with nitrate and phosphate gradients in Floreana, respectively. These variables were not significantly different between the islands, hence providing no indication that environmental conditions are responsible for the relative absence of these species in Santa Cruz. However, it should be noted that the number of monitored locations per island was limited and that the measured environmental gradients in Floreana were less pronounced than in Santa Cruz.
+
+\subsubsection{Fish Assemblages}
+
+The results suggest that the prevailing environmental conditions, rather than the geographical distance between the islands, are the underlying cause for the observed differences in the structure of the fish assemblages. First, in Santa Cruz and Floreana, a mixture of Endemic, Peruvian, Indo-Pacific, Panamic, and widespread species were found, confirming the conclusion of Edgar et al. (2004) regarding the strong connectivity of the archipelago with the surrounding islands and coasts \citep{Edgar2004}. Second, since, within the islands of Santa Cruz and Floreana, temperature and the cover of sand turned out to be most important for the structure of fish assemblages, and given the significant differences of these variables between both islands, it is likely that environmental conditions, rather than geographical distances, are the drivers behind the observed differences in the structure of the fish assemblages of both islands. In addition, the significantly stronger between-locations variability of the structure of the fish assemblages in Santa Cruz compared to Floreana, is likely the result of the pronounced environmental differences between the locations of Santa Cruz compared to those of Floreana. %The importance of environmental conditions for the structure of fish assemblages has also been established by studies on other islands in the Tropical Eastern Pacific \citep{ZapataF.A.Morales1997SpatialColombia,Quimbayo2019DeterminantsIslands}.
+
+Although multiple studies on fish assemblage structures of tropical oceanic islands have highlighted the importance of the degree of isolation, there have been conflicting results and even indications that other, often confounding, factors are at least equally important \citep{Hobbs2011ExtinctionFishes,Luiz2015CommunityVariables,Quimbayo2019DeterminantsIslands}. Due to its unique geographical position at the intersection of multiple oceanic currents and the resulting wide range of environmental conditions, the Galapagos archipelago provides a unique case to assess the importance of these other factors. Indeed, despite its comparable degree of geographical isolation, the Galapagos has a relatively high species richness and functional dispersion compared to other tropical oceanic \mbox{islands \citep{Giddens2019PatternsPacific,Quimbayo2019DeterminantsIslands}.} The importance of the wide range of environmental conditions, in a relatively small area, for the fish assemblage structure had already been suggested in other studies \citep{Edgar2004,Stuart-Smith2013IntegratingDiversity}, but this is the first study to provide quantitative results in favor of this hypothesis. 
+
+% has been found to be more likely the result of ts high surface area and unique position at the intersection of multiple oceanic currents
+
+% Studies on the effect of the degree of isolation of oceanic islands on multiple structure metrices have provided conflicting results and have indicated that multiple other factors are often more important  \citep{Hobbs2011ExtinctionFishes,Luiz2015CommunityVariables,Quimbayo2019DeterminantsIslands}. Unlike most isolated oceanic islands, the Galapagos archipelago has a relatively high species richness and functional diversity. This is most likely the result of its high surface area and unique position at the intersection of multiple oceanic currents, providing a wide range of environmental conditions in a relatively small area . 
+
+% Although, some studies have indicated the degree of isolation of oceanic islands as an important factor to negatively affect the structure of fish assemblages \citep{Hobbs2011ExtinctionFishes,Luiz2015CommunityVariables}, a more recent study by \cite{Quimbayo2019DeterminantsIslands} described a positive effect for multiple metrics describing the fish assemblage structure. 
+
+%Compared to most other oceanic islands the Galapagos archipelago has a 
+
+\textls[-25]{Fish assemblages in Santa Cruz, an island characterized by anthropogenic \mbox{pollution \citep{Werdeman2006EffectsBays,Mateus2019AnArchipelago},}} are affected more by water conditions than physical habitats. The contrary is true for Floreana, where anthropogenic pollution is limited, invoking smaller gradients in water conditions (especially for those variables that turned out to be potential predictors for the structure of fish assemblages). To predict the structure of fish assemblages, nutrient concentrations, i.e., Total P, and temperature gradients were most important in Santa Cruz, while, in Floreana, the percentage sand cover was most important. Although sand cover within the observed transects was relatively low in Floreana, significantly different fish assemblage structures were observed along transects with high versus low sand cover.
+
+Although the most parsimonious model for both islands only contained the geographical distance, latitude and longitude provided clearly a better representation of the geographical distance than ammonium, temperature and all other measured variables could ever provide for the environmental state of the water. Despite being inherent to any spatial environmental study, this limitation can be partially accounted for by including multiple spatial scales in the sampling design, as was illustrated here. As such, the main drivers behind the observed regional and local differences in fish assemblages could be identified with some level of statistical confidence, adding to the work of Harris (1969), Jennings et al. (1994), and Edgar et al. (2004) \citep{Harris1969BreedingIslands,Jennings1994TheArchipelago,Edgar2004}. As suggested by these authors, temperature was identified as a major driver of fish assemblage structure. However, nutrient concentrations and the characteristics of the prevailing physical habitats play an additional important role. 
+
+
+
+%\include{Conclusion}
+\section{Conclusions and Implications for Management}
+
+Differences in fish assemblage structure between Santa Cruz and Floreana are more likely the result of different water conditions rather than geographical distance or different physical habitats. However, while the fish assemblages in Santa Cruz were mainly affected by water quality, fish assemblages in Floreana were mainly affected by the type of physical habitats. This difference was assigned to the different levels of anthropogenic pressure on the coastal waters of both islands, with Floreana having less anthropogenic pressures and a more pristine nature than Santa Cruz. In Santa Cruz, higher levels of pollution seem to correspond with a lower $\alpha$ diversity and significantly different structure of fish assemblages, highlighting the importance of environmental and waste management in the populated bays of the Galapagos archipelago and confirming the negative effects of anthropogenic pressures on fish assemblages of tropical oceanic islands \citep{Quimbayo2019DeterminantsIslands,Sandin2008IslandFish}. 
+
+The structure of fish communities can be used as an indicator of human pollution. However, care should be taken as anthropogenic pressures and natural stressors can easily be confounded. Therefore, when assessing coastal water quality and anthropogenic pressures, naturally occurring local and seasonal variations should be taken into account. Although the sampling effort was distributed in such a way to provide reliable estimates of the underlying environmental drivers of fish assemblage structure and diversity, separating anthropogenic from natural stressors remained difficult. In this study, only anthropogenically influenced areas, with distinct natural stressors, e.g., temperature, were studied. Future studies should include more islands and stronger gradients of anthropogenic pressures to confirm the found results. In addition, estimates of fishing pressures and boat traffic should be used in future studies to provide a more complete assessment of the effect of human presence on the system. Although there have been several studies on the water quality of coastal cities of the Galapagos and how it is related to population size and the number of incoming tourists, the pressures themselves (i.e., agricultural runoffs and untreated wastewater discharge) remain poorly understood. Mateus et al. (2019), for example, suggested that elevated phosphorus concentrations in the coastal waters of Santa Cruz could have been the result of inland pollution and water discharge, but studies to confirm this or to provide a more detailed description of the pollution sources and pathways remain absent \citep{Mateus2019AnArchipelago}.
+
+This study can serve as baseline for future studies aiming to improve ecological understanding and/or develop environmental management guidelines of the Galapagos archipelago and other tropical oceanic islands that face similar threats of increasing anthropogenic pressures. Future studies should focus on the development of water quality criteria adapted to local conditions, identification of pressures on the environment, and management prioritization of pressures and associated environmental changes with the strongest effect on local ecosystems. 
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\vspace{6pt} 
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% optional
+\supplementary{The following are available online at \linksupplementary{s1}, {S1: Sampling design and data processing and modelling roadmap, S2: Independence of observations, S3: Remote sensing, S4: Environmental analyses, S5: Fish $\alpha$ and $\beta$ diversity, S6: PERMANOVA, S7: PCO analysis, S8: CAP analysis, S9: DISTLM analysis, S10: Comments statistical analyses} %MDPI: Please add title. Answer: We provided the titles of the different sections. Providing all the table and figure titles would have been unclear.
+}
+ 
+
+
+
+
+
+\authorcontributions{S.B., R.B., P.G.: Conceptualization, S.B.: Data curation, Visualization, Writing---original draft, Formal analysis, Software, R.B., L.D.-G., P.G.: Funding acquisition, Supervision, Project administration, W.V.E., R.V., C.V.d.h., N.D.S., M.A.E.F., R.B., L.D.-G.: Investigation (water conditions), S.B., L.H., H.R., A.S., N.D.T., R.S., J.P.-C., P.G.: Investigation (fish assemblages), S.B., R.B., P.G.: Methodology, N.D.S., R.B., L.D.-G., P.G.: Resources, All authors: Writing---review and editing. All authors have read and agreed to the published version of the manuscript.}
+
+\funding{The research was partly funded by VLIR-UOS Biodiversity Network Ecuador, Special Research Fund of UGent and VLIR-UOS Global Minds. Travelling scholarships for staff and students were provided by FWO, CWO (UGent), VLIR-UOS (Global Minds), and VLIR-UOS Biodiversity Network Ecuador.}
+
+
+\institutionalreview{{All methods were carried out in accordance with the relevant guidelines and regulations of the Galapagos National Park Directorate under research permit PC-02-19. All experimental protocols were reviewed and approved by the Galapagos National Park Directorate Applied Research Department, which assesses animal care in research activities.}
+%In this section, please add the Institutional Review Board Statement and approval number for studies involving humans or animals. Please note that the Editorial Office might ask you for further information. Please add “The study was conducted according to the guidelines of the Declaration of Helsinki, and approved by the Institutional Review Board (or Ethics Committee) of NAME OF INSTITUTE (protocol code XXX and date of approval).” OR “Ethical review and approval were waived for this study, due to REASON (please provide a detailed justification).” OR “Not applicable” for studies not involving humans or animals. You might also choose to ex-clude this statement if the study did not involve humans or animals.
+}
+
+\informedconsent{{Not applicable}
+%Any research article describing a study involving humans should contain this statement. Please add “Informed consent was obtained from all subjects involved in the study.” OR “Patient con-sent was waived due to REASON (please provide a detailed justification).” OR “Not applicable” for studies not involving humans. You might also choose to exclude this statement if the study did not involve humans.
+
+%Written informed consent for publication must be obtained from participating patients who can be identified (including by the patients themselves). Please state “Written informed consent has been obtained from the patient(s) to publish this paper” if applicable.
+}
+
+\dataavailability{{The data presented in this study are available on request from the corresponding author.}
+%In this section, please provide details regarding where data supporting reported results can be found, including links to publicly archived datasets analyzed or generated during the study. Please refer to suggested Data Availability Statements in section “MDPI Research Data Policies” at \href{https://www.mdpi.com/ethics}{https://www.mdpi.com/ethics}. You might choose to exclude this statement if the study did not report any data.
+} 
+
+
+
+\acknowledgments{\hl{} %MDPI: Stijn Luca,Tom Moens is not mentioned in author contribution part. Answer: They fall under "all authors" 
+ M. Grijalva , R. Parra, A. Rosado, J. Torrico, T. Truong aided in the data collection.}
+
+
+\conflictsofinterest{The authors declare no conflict of interest. The funders had no role in the design of the study; in the collection, analyses, or interpretation of data; in the writing of the manuscript, or in the decision to publish the results.} 
+
+%\clearpage
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\end{paracol}
+\reftitle{References}
+%\externalbibliography{yes}
+%\bibliography{references.bib}
+\begin{thebibliography}{999}
+
+\bibitem[Sandin \em{et~al.}(2008)Sandin, Vermeij, and
+  Hurlbert]{Sandin2008IslandFish}
+Sandin, S.A.; Vermeij, M.J.; Hurlbert, A.H.
+\newblock {Island biogeography of Caribbean coral reef fish}.
+\newblock {\em Glob. Ecol. Biogeogr.} {\bf 2008}, {\em 17},~770--777,
+\newblock
+  doi:{\changeurlcolor{black}\href{https://doi.org/10.1111/j.1466-8238.2008.00418.x}{\detokenize{10.1111/j.1466-8238.2008.00418.x}}}.
+
+\bibitem[Friedlander \em{et~al.}(2016)Friedlander, Ballesteros, Caselle,
+  Gaymer, Palma, Petit, Varas, Wilson, and Sala]{Friedlander2016MarineHotspots}
+Friedlander, A.M.; Ballesteros, E.; Caselle, J.E.; Gaymer, C.F.; Palma, A.T.;
+  Petit, I.; Varas, E.; Wilson, A.M.; Sala, E.
+\newblock {Marine biodiversity in Juan Fern{\'{a}}ndez and Desventuradas
+  islands, Chile: Global endemism hotspots}.
+\newblock {\em PLoS ONE} {\bf 2016},
+\newblock
+  doi:{\changeurlcolor{black}\href{https://doi.org/10.1371/journal.pone.0145059}{\detokenize{10.1371/journal.pone.0145059}}}.
+
+\bibitem[Vitousek(1988)]{Vitousek1988ChapterIslands}
+Vitousek, P.
+\newblock {Chapter 20: Diversity and Biological Invasions of Oceanic Islands}.
+  In {\em Biodiversity}; Wilson, E., Peter, F., Eds.;  Washington (DC): National Academies Press (US) {1988} %Please add the publisher and location. Answer: Washington (DC): National Academies Press (US);
+.
+
+\bibitem[Wilson \em{et~al.}(2010)Wilson, Fisher, Pratchett, Graham, Dulvy,
+  Turner, Cakacaka, and Polunin]{Wilson2010HabitatCommunities}
+Wilson, S.K.; Fisher, R.; Pratchett, M.S.; Graham, N.A.; Dulvy, N.K.; Turner,
+  R.A.; Cakacaka, A.; Polunin, N.V.
+\newblock {Habitat degradation and fishing effects on the size structure of
+  coral reef fish communities}.
+\newblock {\em Ecol. Appl.} {\bf 2010},
+\newblock
+  doi:{\changeurlcolor{black}\href{https://doi.org/10.1890/08-2205.1}{\detokenize{10.1890/08-2205.1}}}.
+
+\bibitem[Edgar \em{et~al.}(2004)Edgar, Banks, Farina, Calvopina, and
+  Martinez]{Edgar2004}
+Edgar, G.J.; Banks, S.; Farina, J.M.; Calvopina, M.; Martinez, C.
+\newblock {Regional biogeography of shallow reef fish and macro-invertebrate
+  communities in the Galapagos archipelago}.
+\newblock {\em J. Biogeogr.} {\bf 2004}, {\em 31},~1107--1124,
+\newblock
+  doi:{\changeurlcolor{black}\href{https://doi.org/10.1111/j.1365-2699.2004.01055.x}{\detokenize{10.1111/j.1365-2699.2004.01055.x}}}.
+
+\bibitem[Quimbayo \em{et~al.}(2019)Quimbayo, Dias, Kulbicki, Mendes, Lamb,
+  Johnson, Aburto-Oropeza, Alvarado, Bocos, Ferreira, Garcia, Luiz,
+  Mascare{\~{n}}as-Osorio, Pinheiro, Rodriguez-Zaragoza, Salas, Zapata, and
+  Floeter]{Quimbayo2019DeterminantsIslands}
+Quimbayo, J.P.; Dias, M.S.; Kulbicki, M.; Mendes, T.C.; Lamb, R.W.; Johnson,
+  A.F.; Aburto-Oropeza, O.; Alvarado, J.J.; Bocos, A.A.; Ferreira, C.E.;
+  et al.
+\newblock {Determinants of reef fish assemblages in tropical Oceanic islands}.
+\newblock {\em Ecography} {\bf 2019}, {\em 42},~77--87,
+\newblock
+  doi:{\changeurlcolor{black}\href{https://doi.org/10.1111/ecog.03506}{\detokenize{10.1111/ecog.03506}}}.
+
+\bibitem[Palacios(2004)]{Palacios2004SeasonalInfluences}
+Palacios, D.M.
+\newblock {Seasonal patterns of sea-surface temperature and ocean color around
+  the Gal{\'{a}}pagos: Regional and local influences}.
+\newblock {\em Deep Sea Res. Part II Top. Stud. Oceanogr.} {\bf
+  2004}, {\em 51},~43--57,
+\newblock
+  doi:{\changeurlcolor{black}\href{https://doi.org/10.1016/j.dsr2.2003.08.001}{\detokenize{10.1016/j.dsr2.2003.08.001}}}.
+
+\bibitem[Harris(1969)]{Harris1969BreedingIslands}
+Harris, M.P.
+\newblock {Breeding seasons of sea‐birds in the Galapagos Islands}.
+\newblock {\em J. Zool.} {\bf 1969}, {\em 159},~145--165,
+\newblock
+  doi:{\changeurlcolor{black}\href{https://doi.org/10.1111/j.1469-7998.1969.tb03076.x}{\detokenize{10.1111/j.1469-7998.1969.tb03076.x}}}.
+
+\bibitem[Jennings \em{et~al.}(1994)Jennings, Brierly, and
+  Walker]{Jennings1994TheArchipelago}
+Jennings, S.; Brierly, A.; Walker, J.
+\newblock {The inshore fish assemblages of the Gal{\'{a}}pagos archipelago}.
+\newblock {\em Biol. Conserv.} {\bf 1994}, {\em 70},~49--57,
+\newblock
+  doi:{\changeurlcolor{black}\href{https://doi.org/10.1016/0006-3207(94)90298-4}{\detokenize{10.1016/0006-3207(94)90298-4}}}.
+
+\bibitem[Llerena-Martillo \em{et~al.}(2018)Llerena-Martillo,
+  Pe{\~{n}}aherrera-Palma, and Espinoza]{Llerena-Martillo2018FishReserve}
+Llerena-Martillo, Y.; Pe{\~{n}}aherrera-Palma, C.; Espinoza, E.R.
+\newblock {Fish assemblages in three fringed mangrove bays of Santa Cruz
+  Island, Galapagos marine reserve}.
+\newblock {\em Rev. Biol. Trop.} {\bf 2018}, {\em 66},~674--687,
+\newblock
+  doi:{\changeurlcolor{black}\href{https://doi.org/10.15517/rbt.v66i2.33400}{\detokenize{10.15517/rbt.v66i2.33400}}}.
+
+\bibitem[Fern{\'{a}}ndez(2008)]{Fernandez2008CoastalIsland}
+Fern{\'{a}}ndez, A.R.
+\newblock {\em Coastal Nutrient and Water Budget Assessments for Puerto Ayora,
+  Academy Bay, Santa Cruz Island};
+\newblock Technical Report; The Pennsylvania State University: State College, PA, USA, 2008.
+
+\bibitem[Hardter \em{et~al.}(2010)Hardter, O{\~{n}}a, Butt, and
+  Chitwood]{Hardter2010WasteIslands}
+Hardter, U.; O{\~{n}}a, I.; Butt, K.; Chitwood, J.
+\newblock {\em Waste Management Blueprint for the Galapagos Islands};
+\newblock Technical Report; WWF and Toyota: Quito, Ecuador, 2010.
+
+\bibitem[{Ministry of Tourism of
+  Ecuador}(2019)]{MinistryofTourismofEcuador2019Observatorio2019-09-12}
+{Ministry of Tourism of Ecuador}.
+\newblock Observatorio de Turismo de Gal{\'{a}}pagos. Available online: \url{www.turismo.gob.ec/} (accessed on 12 September 2019).
+
+\bibitem[Riascos-Flores \em{et~al.}(2020)Riascos-Flores, Bruneel, Van~der
+  Heyden, Deknock, Van~Echelpoel, Forio, De~Saeyer, Vanden~Berghe, Spanoghe,
+  Bermudez, Dominguez-Granda, and Goethals]{Riascos-Flores2020PollutedEcuador}
+Riascos-Flores, L.; Bruneel, S.; Van~der Heyden, C.; Deknock, A.;
+  Van~Echelpoel, W.; Forio, M.; De~Saeyer, N.; Vanden~Berghe, W.; Spanoghe, P.;
+  Bermudez, R.; et al.
+\newblock {Polluted paradise: Occurrence of pesticide residues within the urban
+  coastal zones of Santa Cruz and Isabela (Galapagos, Ecuador)}.
+\newblock {\em Sci. Total Environ.} {\bf 2020},
+\newblock
+  doi:{\changeurlcolor{black}\href{https://doi.org/10.1016/j.scitotenv.2020.142956}{\detokenize{10.1016/j.scitotenv.2020.142956}}}.
+
+\bibitem[Boersma and Parrish(1999)]{Boersma1999LimitingSolution}
+Boersma, P.D.; Parrish, J.K.
+\newblock {Limiting abuse: Marine protected areas, a limited solution}.
+\newblock {\em Ecol. Econ.} {\bf 1999}, {\em 31},~287--304,
+\newblock
+  doi:{\changeurlcolor{black}\href{https://doi.org/10.1016/S0921-8009(99)00085-3}{\detokenize{10.1016/S0921-8009(99)00085-3}}}.
+
+\bibitem[Mateus \em{et~al.}(2019)Mateus, Guerrero, Quezada, Lara, and
+  Ochoa-Herrera]{Mateus2019AnArchipelago}
+Mateus, C.; Guerrero, C.A.; Quezada, G.; Lara, D.; Ochoa-Herrera, V.
+\newblock {An integrated approach for evaluating water quality between
+  2007-2015 in Santa Cruz Island in the Galapagos Archipelago}.
+\newblock {\em Water} {\bf 2019}, {\em 11},~937,
+\newblock
+  doi:{\changeurlcolor{black}\href{https://doi.org/10.3390/w11050937}{\detokenize{10.3390/w11050937}}}.
+
+\bibitem[Thuiller \em{et~al.}(2015)Thuiller, Pollock, Gueguen, and
+  M{\"{u}}nkem{\"{u}}ller]{Thuiller2015}
+Thuiller, W.; Pollock, L.J.; Gueguen, M.; M{\"{u}}nkem{\"{u}}ller, T.
+\newblock {From species distributions to meta-communities}.
+\newblock {\em Ecol. Lett.} {\bf 2015}, {\em 18},~1321--1328,
+\newblock
+  doi:{\changeurlcolor{black}\href{https://doi.org/10.1111/ele.12526.From}{\detokenize{10.1111/ele.12526.From}}}.
+
+\bibitem[Bruneel \em{et~al.}(2018)Bruneel, Gobeyn, Verhelst, Reubens, Moens,
+  and Goethals]{Bruneel2018}
+Bruneel, S.; Gobeyn, S.; Verhelst, P.; Reubens, J.; Moens, T.; Goethals, P.
+\newblock {Implications of movement for species distribution models---Rethinking environmental data tools}.
+\newblock {\em Sci. Total. Environ.} {\bf 2018}, {\em
+  628--629},~893--905,
+\newblock
+  doi:{\changeurlcolor{black}\href{https://doi.org/10.1016/j.scitotenv.2018.02.026}{\detokenize{10.1016/j.scitotenv.2018.02.026}}}.
+
+\bibitem[Leibold \em{et~al.}(2004)Leibold, Holyoak, Mouquet, Amarasekare,
+  Chase, Hoopes, Holt, Shurin, Law, Tilman, Loreau, and Gonzalez]{Leibold2004}
+Leibold, M.A.; Holyoak, M.; Mouquet, N.; Amarasekare, P.; Chase, J.M.; Hoopes,
+  M.F.; Holt, R.D.; Shurin, J.B.; Law, R.; \mbox{Tilman, D.; et al}.
+\newblock {The metacommunity concept: A framework for multi-scale community
+  ecology}.
+\newblock {\em Ecol. Lett.} {\bf 2004}, {\em 7},~601--613,
+\newblock
+  doi:{\changeurlcolor{black}\href{https://doi.org/10.1111/j.1461-0248.2004.00608.x}{\detokenize{10.1111/j.1461-0248.2004.00608.x}}}.
+
+\bibitem[Leibold \em{et~al.}(2017)Leibold, Chase, and Ernest]{Leibold2017}
+Leibold, M.A.; Chase, J.M.; Ernest, S.K.
+\newblock {Community assembly and the functioning of ecosystems: How
+  metacommunity processes alter ecosystems attributes}.
+\newblock {\em Ecology} {\bf 2017}, {\em 98},~909--919,
+\newblock
+  doi:{\changeurlcolor{black}\href{https://doi.org/10.1002/ecy.1697}{\detokenize{10.1002/ecy.1697}}}.
+
+\bibitem[Houvenaghel(1978)]{Houvenaghel1978OceanographicIslands}
+Houvenaghel, G.
+\newblock {Oceanographic Conditions in the Galapagos Archipelago and Their
+  Relationships with Life on the Islands}. In {\em Upwelling Ecosystems}; Boje,
+  R., Tomczak, M., Eds.; Springer: Berlin, Germany, 1978; pp. 181--200,
+\newblock
+  doi:{\changeurlcolor{black}\href{https://doi.org/10.1017/CBO9781107415324.004}{\detokenize{10.1017/CBO9781107415324.004}}}.
+
+\bibitem[Liu \em{et~al.}(2014)Liu, Meng, Liang, Li, Xu, Huang, and
+  Yan]{Liu2014}
+Liu, X.; Meng, W.; Liang, G.; Li, K.; Xu, W.; Huang, L.; Yan, J.
+\newblock {Available phosphorus in forest soil increases with soil nitrogen but
+  not total phosphorus: Evidence from subtropical forests and a pot
+  experiment}.
+\newblock {\em PLoS ONE} {\bf 2014}, {\em 9},
+\newblock
+  doi:{\changeurlcolor{black}\href{https://doi.org/10.1371/journal.pone.0088070}{\detokenize{10.1371/journal.pone.0088070}}}.
+
+\bibitem[Okey \em{et~al.}(2004)Okey, Banks, Born, Bustamante, Calvopi{\~{n}}a,
+  Edgar, Espinoza, Fari{\~{n}}a, Garske, Reck, Salazar, Shepherd, Toral-Granda,
+  and Wallem]{Okey2004AStrategies}
+Okey, T.A.; Banks, S.; Born, A.F.; Bustamante, R.H.; Calvopi{\~{n}}a, M.;
+  Edgar, G.J.; Espinoza, E.; Fari{\~{n}}a, J.M.; Garske, L.E.; Reck, G.K.;
+  et al.
+\newblock {A trophic model of a Gal{\'{a}}pagos subtidal rocky reef for
+  evaluating fisheries and conservation strategies}.
+\newblock {\em Ecol. Model.} {\bf 2004}, {\em 172},~383--401,
+\newblock
+  doi:{\changeurlcolor{black}\href{https://doi.org/10.1016/j.ecolmodel.2003.09.019}{\detokenize{10.1016/j.ecolmodel.2003.09.019}}}.
+
+\bibitem[{INEC}(2015)]{INEC2015Censo2015}
+{Instituto Nacional de Estadística y Censos (INEC)}.
+\newblock {\em Censo de Poblaci{\'{o}}n y Vivienda Gal{\'{a}}pagos 2015};
+\newblock Technical Report;  {2015.} %Please add the publisher and location. Answer: publisher of the report is INEC and location is Ecuador.
+
+
+\bibitem[Mallet and Pelletier(2014)]{Mallet2014}
+Mallet, D.; Pelletier, D.
+\newblock {Underwater video techniques for observing coastal marine
+  biodiversity: A review of sixty years of publications (1952-2012)}.
+\newblock {\em Fish. Res.} {\bf 2014}, {\em 154},~44--62,
+\newblock
+  doi:{\changeurlcolor{black}\href{https://doi.org/10.1016/j.fishres.2014.01.019}{\detokenize{10.1016/j.fishres.2014.01.019}}}.
+
+\bibitem[Wartenberg and Booth(2015)]{Wartenberg2015}
+Wartenberg, R.; Booth, A.J.
+\newblock {Video transects are the most appropriate underwater visual census
+  method for surveying high-latitude coral reef fishes in the southwestern
+  Indian Ocean}.
+\newblock {\em Mar. Biodivers.} {\bf 2015}, {\em 45},~633--646,
+\newblock
+  doi:{\changeurlcolor{black}\href{https://doi.org/10.1007/s12526-014-0262-z}{\detokenize{10.1007/s12526-014-0262-z}}}.
+
+\bibitem[Pelletier \em{et~al.}(2011)Pelletier, Leleu, Mou-Tham, Guillemot, and
+  Chabanet]{Pelletier2011}
+Pelletier, D.; Leleu, K.; Mou-Tham, G.; Guillemot, N.; Chabanet, P.
+\newblock {Comparison of visual census and high definition video transects for
+  monitoring coral reef fish assemblages}.
+\newblock {\em Fish. Res.} {\bf 2011}, {\em 107},~84--93,
+\newblock
+  doi:{\changeurlcolor{black}\href{https://doi.org/10.1016/j.fishres.2010.10.011}{\detokenize{10.1016/j.fishres.2010.10.011}}}.
+
+\bibitem[Williams \em{et~al.}(2006)Williams, Walsh, Tissot, and
+  Hallacher]{Williams2006ImpactSurveys}
+Williams, I.D.; Walsh, W.J.; Tissot, B.N.; Hallacher, L.E.
+\newblock {Impact of observers' experience level on counts of fishes in
+  underwater visual surveys}.
+\newblock {\em Mar. Ecol. Prog. Ser.} {\bf 2006}, {\em 310},~185--191,
+\newblock
+  doi:{\changeurlcolor{black}\href{https://doi.org/10.3354/meps310185}{\detokenize{10.3354/meps310185}}}.
+
+\bibitem[Guisan \em{et~al.}(2006)Guisan, Lehmann, Ferrier, Austin, Overton,
+  Aspinall, and Hastie]{Guisan2006}
+Guisan, A.; Lehmann, A.; Ferrier, S.; Austin, M.; Overton, J.M.C.; Aspinall,
+  R.; Hastie, T.
+\newblock {Making better biogeographical predictions of species'
+  distributions}.
+\newblock {\em J. Appl. Ecol.} {\bf 2006}, {\em 43},~386--392,
+\newblock
+  doi:{\changeurlcolor{black}\href{https://doi.org/10.1111/j.1365-2664.2006.01164.x}{\detokenize{10.1111/j.1365-2664.2006.01164.x}}}.
+
+\bibitem[Kissling and Carl(2008)]{Kissling2008SpatialModels}
+Kissling, W.D.; Carl, G.
+\newblock {Spatial autocorrelation and the selection of simultaneous
+  autoregressive models}.
+\newblock {\em Glob. Ecol. Biogeogr.} {\bf 2008}, {\em 17},~59--71,
+\newblock
+  doi:{\changeurlcolor{black}\href{https://doi.org/10.1111/j.1466-8238.2007.00334.x}{\detokenize{10.1111/j.1466-8238.2007.00334.x}}}.
+
+\bibitem[Legendre(1993)]{Legendre1993SpatialParadigm}
+Legendre, P.
+\newblock {Spatial Autocorrelation: Trouble or New Paradigm?}
+\newblock {\em Ecology} {\bf 1993}, {\em 74},~1659--1673,
+
+\bibitem[{R Core Team}(2019)]{RCoreTeam2019R:Computing}
+{R Core Team}.
+\newblock {\em R: A Language and Environment for Statistical Computing};  Vienna, Austria {2019}%Please add the publisher and location. Answer: publisher is not applicable here. Location is Vienna, Austria
+.
+
+\bibitem[Clarke and Gorley(2006)]{Clarke2006PRIMERManual/Tutorial}
+Clarke, K.R.; Gorley, R.N.
+\newblock {{PRIMER v6: Manual/Tutorial}%Please point out its type, book, conference or journal? then add complete information. Answer: book. Location is UK. Publisher is PRIMER-E Ltd.
+}.
+\newblock {\em PRIMER-E, Plymouth} {\bf 2006}.
+
+\bibitem[Anderson \em{et~al.}(2008)Anderson, Gorley, and
+  Clarke]{Anderson2008PERMANOVA+Methods}
+Anderson, M.J.; Gorley, R.N.; Clarke, K.R.
+\newblock {\em {PERMANOVA+ for PRIMER: Guide to Software and Statistical
+  Methods}};  {2008}%Please add the publisher and location. Answer: book. Location is UK. Publisher is PRIMER-E Ltd.
+.
+
+\bibitem[Legendre and Andersson(1999)]{Legendre1999Distance-basedExperiments}
+Legendre, P.; Andersson, M.J.
+\newblock {Distance-based redundancy analysis: Testing multispecies responses
+  in multifactorial ecological experiments}.
+\newblock {\em Ecol. Monogr.} {\bf 1999}, {\em 69},~1--24,
+\newblock
+  doi:{\changeurlcolor{black}\href{https://doi.org/10.1890/0012-9615(1999)069[0001:DBRATM]2.0.CO;2}{\detokenize{10.1890/0012-9615(1999)069[0001:DBRATM]2.0.CO;2}}}.
+
+\bibitem[Gotelli and Ellison(2004)]{Gotelli2004AStatistics.}
+Gotelli, N.J.; Ellison, A.M.
+\newblock {\em A Primer of Ecological Statistics}; Sinauer Associates: Sunderland, MA, USA, 2004.
+
+\bibitem[Gray(2000)]{Gray2000TheShelf}
+Gray, J.S.
+\newblock {The measurement of marine species diversity, with an application to
+  the benthic fauna of the Norwegian continental shelf}.
+\newblock {\em J. Exp. Mar. Biol. Ecol.} {\bf 2000},
+  {\em 250},~23--49.
+
+\bibitem[Whittaker(1975)]{Whittaker1975CommunitiesEcosystems}
+Whittaker, R.H.
+\newblock {\em {Communities and Ecosystems}}, 2nd ed.; Macmillan: New York, NY, USA, 1975; p. 385.
+
+\bibitem[Magurran(2004)]{Magurran}
+Magurran, A.E.
+\newblock {\em {Measuring Biological Diversity}}; Blackwell Publishing: Malden, MA, USA, 2004.
+
+\bibitem[Anderson \em{et~al.}(2006)Anderson, Ellingsen, and
+  McArdle]{Anderson2006MultivariateDiversity}
+Anderson, M.J.; Ellingsen, K.E.; McArdle, B.H.
+\newblock {Multivariate dispersion as a measure of beta diversity}.
+\newblock {\em Ecol. Lett.} {\bf 2006},
+\newblock
+  doi:{\changeurlcolor{black}\href{https://doi.org/10.1111/j.1461-0248.2006.00926.x}{\detokenize{10.1111/j.1461-0248.2006.00926.x}}}.
+
+\bibitem[Whittaker \em{et~al.}(2001)Whittaker, Willis, and
+  Field]{Whittaker2001ScaleDiversity}
+Whittaker, R.J.; Willis, K.J.; Field, R.
+\newblock {Scale and species richness: Towards a general, hierarchical theory
+  of species diversity}.
+\newblock {\em J. Biogeogr.} {\bf 2001}, {\em 28},~453--470,
+\newblock
+  doi:{\changeurlcolor{black}\href{https://doi.org/10.1046/j.1365-2699.2001.00563.x}{\detokenize{10.1046/j.1365-2699.2001.00563.x}}}.
+
+\bibitem[Whittaker(1998)]{Whittaker1998IslandConservation}
+Whittaker, R.
+\newblock {\em {Island Biogeography: Ecology, Evolution, and Conservation}}; Oxford University Press: Oxford, UK, 1998.
+
+\bibitem[Whittaker \em{et~al.}(2017)Whittaker, Fern{\'{a}}ndez-Palacios,
+  Matthews, Borregaard, and Triantis]{Whittaker2017IslandLaboratories}
+Whittaker, R.J.; Fern{\'{a}}ndez-Palacios, J.M.; Matthews, T.J.; Borregaard,
+  M.K.; Triantis, K.A.
+\newblock {Island biogeography: Taking the long view of nature's laboratories}.
+\newblock {\em Science} {\bf 2017}, {\em 357},
+\newblock
+  doi:{\changeurlcolor{black}\href{https://doi.org/10.1126/science.aam8326}{\detokenize{10.1126/science.aam8326}}}.
+
+\bibitem[Ter~Braak and Prentice(1988)]{TerBraak1988AAnalysis}
+Ter~Braak, C.J.; Prentice, C.I.
+\newblock {A Theory of Gradient Analysis}.
+\newblock {\em Adv. Ecol. Res.} {\bf 1988}, {\em 18},~271--317,
+\newblock
+  doi:{\changeurlcolor{black}\href{https://doi.org/10.1016/S0065-2504(08)60183-X}{\detokenize{10.1016/S0065-2504(08)60183-X}}}.
+
+\bibitem[Anderson and Santana-Garcon(2015)]{Anderson2015}
+Anderson, M.J.; Santana-Garcon, J.
+\newblock {Measures of precision for dissimilarity-based multivariate analysis
+  of ecological communities}.
+\newblock {\em Ecol. Lett.} {\bf 2015}, {\em 18},~66--73,
+\newblock
+  doi:{\changeurlcolor{black}\href{https://doi.org/10.1111/ele.12385}{\detokenize{10.1111/ele.12385}}}.
+
+\bibitem[Anderson and Walsh(2013)]{Anderson2016}
+Anderson, M.J.; Walsh, D.C.I.
+\newblock {PERMANOVA , ANOSIM , and the Mantel test in the face of
+  heterogeneous dispersions: What null hypothesis are you testing?}
+\newblock {\em Ecol. Monogr.} {\bf 2013}, {\em 83},~557--574,
+
+\bibitem[Legendre and Legendre(2012)]{Legendre2012NumericalEcology}
+Legendre, P.; Legendre, L.
+\newblock {\em {Numerical Ecology}}, 3rd ed.; Elsevier:  {Amsterdam, The Netherlands,} %newly added information, please confirm. Answer: correct
+  2012.
+
+\bibitem[Robinson \em{et~al.}(2011)Robinson, Elith, Hobday, Pearson, Kendall,
+  Possingham, and Richardson]{Robinson2011PushingOpportunities}
+Robinson, L.M.; Elith, J.; Hobday, A.J.; Pearson, R.G.; Kendall, B.E.;
+  Possingham, H.P.; Richardson, A.J.
+\newblock {Pushing the limits in marine species distribution modelling: Lessons
+  from the land present challenges and opportunities}.
+\newblock {\em Glob. Ecol. Biogeogr.} {\bf 2011}, {\em 20},~789--802,
+\newblock
+  doi:{\changeurlcolor{black}\href{https://doi.org/10.1111/j.1466-8238.2010.00636.x}{\detokenize{10.1111/j.1466-8238.2010.00636.x}}}.
+
+\bibitem[Luiz \em{et~al.}(2015)Luiz, Mendes, Barneche, Ferreira, Noguchi,
+  Villa{\c{c}}a, Rangel, Gasparini, and Ferreira]{Luiz2015CommunityVariables}
+Luiz, O.J.; Mendes, T.C.; Barneche, D.R.; Ferreira, C.G.; Noguchi, R.;
+  Villa{\c{c}}a, R.C.; Rangel, C.A.; Gasparini, J.L.; Ferreira, C.E.
+\newblock {Community structure of reef fishes on a remote oceanic island (St
+  Peter and St Paul's Archipelago, equatorial Atlantic): The relative influence
+  of abiotic and biotic variables}.
+\newblock {\em Mar. Freshw. Res.} {\bf 2015}, {\em 66},~739--749,
+\newblock
+  doi:{\changeurlcolor{black}\href{https://doi.org/10.1071/MF14150}{\detokenize{10.1071/MF14150}}}.
+
+\bibitem[Quimbayo \em{et~al.}(2017)Quimbayo, Mendes, Kulbicki, Floeter, and
+  Zapata]{Quimbayo2017UnusualPacific}
+Quimbayo, J.P.; Mendes, T.C.; Kulbicki, M.; Floeter, S.R.; Zapata, F.A.
+\newblock {Unusual reef fish biomass and functional richness at Malpelo, a
+  remote island in the Tropical Eastern Pacific}.
+\newblock {\em Environ. Biol. Fishes} {\bf 2017}, {\em
+  100},~149--162,
+\newblock
+  doi:{\changeurlcolor{black}\href{https://doi.org/10.1007/s10641-016-0557-y}{\detokenize{10.1007/s10641-016-0557-y}}}.
+
+\bibitem[Yackulic and Ginsberg(2016)]{Yackulic2016}
+Yackulic, C.B.; Ginsberg, J.R.
+\newblock {The scaling of geographic ranges: Implications for species
+  distribution models}.
+\newblock {\em Landsc. Ecol.} {\bf 2016}, {\em 31},~1195--1208,
+\newblock
+  doi:{\changeurlcolor{black}\href{https://doi.org/10.1007/s10980-015-0333-y}{\detokenize{10.1007/s10980-015-0333-y}}}.
+
+\bibitem[Elith and Leathwick(2009)]{Elith2009}
+Elith, J.; Leathwick, J.R.
+\newblock {Species Distribution Models: Ecological Explanation and Prediction
+  Across Space and Time}.
+\newblock {\em Annu. Rev. Ecol. Evol. Syst.} {\bf 2009},
+  {\em 40},~677--697,
+\newblock
+  doi:{\changeurlcolor{black}\href{https://doi.org/10.1146/annurev.ecolsys.110308.120159}{\detokenize{10.1146/annurev.ecolsys.110308.120159}}}.
+
+\bibitem[Guisan and Zimmermann(2000)]{Guisan2000}
+Guisan, A.; Zimmermann, N.E.
+\newblock {Predictive habitat distribution models in ecology}.
+\newblock {\em Ecol. Model.} {\bf 2000}, {\em 135},~147--186,
+\newblock
+  doi:{\changeurlcolor{black}\href{https://doi.org/10.1016/S0304-3800(00)00354-9}{\detokenize{10.1016/S0304-3800(00)00354-9}}}.
+
+\bibitem[Johnston and Roberts(2009)]{Johnston2009ContaminantsMeta-analysis}
+Johnston, E.L.; Roberts, D.A.
+\newblock {Contaminants reduce the richness and evenness of marine communities:
+  A review and meta-analysis}.
+\newblock {\em Environ. Pollut.} {\bf 2009}, {\em 157},~1745--1752,
+\newblock
+  doi:{\changeurlcolor{black}\href{https://doi.org/10.1016/j.envpol.2009.02.017}{\detokenize{10.1016/j.envpol.2009.02.017}}}.
+
+\bibitem[Palacios and Burgos(2009)]{Palacios2009Estudio2007.}
+Palacios, C.; Burgos, L.
+\newblock {Estudio comparativo de la calidad del agua en el {\'{a}}rea marino
+  costera de bah{\'{i}}a academia, caleta aeolian y puerto villamil- islas
+  gal{\'{a}}pagos- junio-julio 2007.}
+\newblock {\em Acta Ocean. Pac{\'{i}}fico} {\bf 2009}, {\em
+  15}, 165--173.
+
+\bibitem[Schaeffer \em{et~al.}(2008)Schaeffer, Morrison, Kamykowski, Feldman,
+  Xie, Liu, Sweet, McCulloch, and
+  Banks]{Schaeffer2008PhytoplanktonMeasurements}
+Schaeffer, B.A.; Morrison, J.M.; Kamykowski, D.; Feldman, G.C.; Xie, L.; Liu,
+  Y.; Sweet, W.; McCulloch, A.; Banks, S.
+\newblock {Phytoplankton biomass distribution and identification of productive
+  habitats within the Galapagos Marine Reserve by MODIS, a surface acquisition
+  system, and in-situ measurements}.
+\newblock {\em Remote. Sens. Environ.} {\bf 2008}, {\em
+  112},~3044--3054,
+\newblock
+  doi:{\changeurlcolor{black}\href{https://doi.org/10.1016/j.rse.2008.03.005}{\detokenize{10.1016/j.rse.2008.03.005}}}.
+
+\bibitem[Werdeman(2006)]{Werdeman2006EffectsBays}
+Werdeman, J.L.
+\newblock {\em Effects of Populated Towns on Water Quality in Neighboring
+  Gal{\`{a}}pagos Bays};
+\newblock Technical Report; University of Washington: Washington, DC, USA,  2006.
+
+\bibitem[Stumpf \em{et~al.}(2013)Stumpf, Gonzalez, and
+  Noble]{Stumpf2013InvestigatingEcuador}
+Stumpf, C.; Gonzalez, R.; Noble, R.
+\newblock {Investigating the Coastal Water Quality of the Galapagos Islands,
+  Ecuador}. In {\em Social and Ecological Interactions in the Galapagos
+  Islands}; Walsh, S., Mena, C., Eds.;  Springer, New York {2013; } %Please add the publisher and location. Answer: Publisher: Springer New York
+Chapter~10, p. 255.
+
+\bibitem[Hobbs \em{et~al.}(2011)Hobbs, Jones, and
+  Munday]{Hobbs2011ExtinctionFishes}
+Hobbs, J.P.; Jones, G.P.; Munday, P.L.
+\newblock {Extinction Risk in Endemic Marine Fishes}.
+\newblock {\em Conserv. Biol.} {\bf 2011},
+\newblock
+  doi:{\changeurlcolor{black}\href{https://doi.org/10.1111/j.1523-1739.2011.01698.x}{\detokenize{10.1111/j.1523-1739.2011.01698.x}}}.
+
+\bibitem[Giddens \em{et~al.}(2019)Giddens, Goodell, Friedlander, and Salinas-de
+  le{\'{o}}n]{Giddens2019PatternsPacific}
+Giddens, J.; Goodell, W.; Friedlander, A.; Salinas-de le{\'{o}}n, P.
+\newblock {Patterns in Bathyal Demersal Biodiversity and Community Composition
+  Around Archipelagos in the Tropical Eastern Pacific.} \emph{Front. Mar. Sci.} {\bf 2019},
+\newblock
+  doi:{\changeurlcolor{black}\href{https://doi.org/10.3389/fmars.2019.00388}{\detokenize{10.3389/fmars.2019.00388}}}.
+
+\bibitem[Stuart-Smith \em{et~al.}(2013)Stuart-Smith, Bates, Lefcheck, Duffy,
+  Baker, Thomson, Stuart-Smith, Hill, Kininmonth, Airoldi, Becerro, Campbell,
+  Dawson, Navarrete, Soler, Strain, Willis, and
+  Edgar]{Stuart-Smith2013IntegratingDiversity}
+Stuart-Smith, R.D.; Bates, A.E.; Lefcheck, J.S.; Duffy, J.E.; Baker, S.C.;
+  Thomson, R.J.; Stuart-Smith, J.F.; Hill, N.A.; Kininmonth, S.J.; Airoldi, L.;
+  et al.
+\newblock {Integrating abundance and functional traits reveals new global
+  hotspots of fish diversity}.
+\newblock {\em Nature} {\bf 2013}, {\em 501},~539--542,
+\newblock
+  doi:{\changeurlcolor{black}\href{https://doi.org/10.1038/nature12529}{\detokenize{10.1038/nature12529}}}.
+
+\end{thebibliography}
+
+
+
+%\end{paracol}
+\end{document}

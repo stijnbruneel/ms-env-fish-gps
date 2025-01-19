@@ -1,0 +1,28 @@
+\renewcommand{\arraystretch}{1.25}
+\begin{table}
+\centering
+\scriptsize
+\caption{Results of DISTLM analyses using all predictors, without grouping them in different series of variables. Predictors were selected using AICc. For both islands together (n=30) and separately (n=15).}
+\label{DISTLMallvariablesoutsideseries_Transectlevel_median}
+\resizebox{0.7\textwidth}{!}{
+\begin{tabular}{@{}l|l|P{12mm}P{1cm}P{1cm}|P{12mm}P{12mm}P{10mm}P{12mm}@{}}
+\toprule
+\multirow{2}{*}{}                                                        & \multirow{2}{*}{Variable}                                                                & \multicolumn{3}{c|}{Marginal tests} & \multicolumn{4}{c}{Sequential tests}  \\ 
+                                                                         &                                                                                          & pseudo-F & p-value     & R$^{2}$          & AICc & pseudo-F & p-value     & cum. R$^{2}$        \\ 
+\midrule
+\multirow{5}{*}{\begin{tabular}[c]{@{}l@{}}Both \\islands \end{tabular}} & Y (latitude)                                                                                        & 32.81    & 0.001 & 0.54    &    204.89     & 32.81    & 0.001 & 0.54                \\ 
+                                                                         & \begin{tabular}[c]{@{}l@{}}Rock with\\sediment deposition \end{tabular} & 9.08     & 0.001 & 0.24      &   201.96    & 5.33     & 0.001 & 0.62                \\ 
+                                                                         & Temperature                                                                              & 19.37    & 0.001 & 0.41      &   200.09    & 4.25     & 0.001 & 0.67                \\ 
+                                                                         & Ammonium                                                                                 & 17.45    & 0.001 & 0.38     &   199.26     & 3.31     & 0.004 & 0.71                \\ 
+                                                                         & Vegetated rock                                                                           & 9.95     & 0.001 & 0.26     &    199.18    & 2.73     & 0.012 & 0.74                \\ 
+\hline
+\multirow{2}{*}{\begin{tabular}[c]{@{}l@{}}Santa \\Cruz \end{tabular}}   & \begin{tabular}[c]{@{}l@{}}Rock with\\sediment deposition \end{tabular} & 4.91     & 0.001 & 0.27      &   104.97    & 4.91     & 0.002 & 0.27                \\ 
+                                                                         & Temperature                                                                              & 4.00     & 0.003 & 0.24      &   102.66    & 5.30     & 0.002 & 0.50                \\ 
+\hline
+\multirow{2}{*}{Floreana}                                                & Sand                                                                                     & 3.94     & 0.003 & 0.23     &    94.97    & 3.94     & 0.004 & 0.23                \\ 
+                                                                         & Bare rock                                                                                & 3.31     & 0.011 & 0.20     &    94.47    & 3.34     & 0.023 & 0.40                \\
+\bottomrule
+\end{tabular}
+}
+\end{table}
+\renewcommand{\arraystretch}{1}

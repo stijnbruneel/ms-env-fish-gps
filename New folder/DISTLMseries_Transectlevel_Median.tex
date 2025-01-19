@@ -1,0 +1,31 @@
+\renewcommand{\arraystretch}{1.5}
+\begin{table}
+\centering
+\scriptsize
+\caption{Results of DISTLM analyses using series of predictors (water parameters (Water), physical habitats (Habitat) and geographical distances (XY)). The optimal number of predictors per series was determined using the AICc. For each marginal test also the AICc weights (w\textsubscript{AICc}) were determined. Models were constructed for both islands together (n=30) and separately (n=15).}
+\label{DISTLMseries_Transectlevel_Median}
+\resizebox{0.7\textwidth}{!}{
+\begin{tabular}{@{}l|l|P{12mm}P{1cm}P{1cm}P{12mm}P{12mm}|P{12mm}P{1cm}P{12mm}@{}}
+\toprule
+\multirow{2}{*}{}                                                        & \multirow{2}{*}{Variable series} & \multicolumn{5}{c|}{Marginal tests}  & \multicolumn{3}{c}{Sequential tests}  \\ 
+%\cline{3-9}
+                                                                         &                               & pseudo-F & p-value     & R$^{2}$  & AICc & w\textsubscript{AICc}  & pseudo-F & p-value     & cum. R$^{2}$        \\ 
+\midrule
+\multirow{3}{*}{\begin{tabular}[c]{@{}l@{}}Both \\islands \end{tabular}} & XY (q=2)                      & 21.43    & 0.001 & 0.61     & 202.11 & 0.73 & 21.43    & 0.001 & 0.61                \\ 
+                                                                         & Water (q=5)                   & 10.71    & 0.001 & 0.69     & 204.18 & 0.26     & /        & /     & /                   \\ 
+                                                                         & Habitat (q=3)                 & 9.03     & 0.001 & 0.51     & 211.89 & 0.01    & /        & /     & /                   \\ 
+\hline
+\multirow{3}{*}{\begin{tabular}[c]{@{}l@{}}Santa \\Cruz \end{tabular}}   & Water (q=2)                   & 5.52     & 0.001 & 0.48     & 103.17 & 0.48 & 5.52     & 0.001 & 0.48                \\
+& XY (q=3)                      & 4.95     & 0.001 & 0.58     & 103.96 & 0.32     & /        & /     & /                   \\ 
+                                                                         & Habitat (q=1)                 & 4.91     & 0.001 & 0.27     & 104.97 & 0.20     & /        & /     & /                   \\ 
+                                                                         
+\hline
+\multirow{3}{*}{Floreana}                                                & Habitat (q=2)                 & 4.00     & 0.001 & 0.40     & 94.46 & 0.66 & 4.00     & 0.001 & 0.40                \\ 
+& XY (q=1)                      & 1.74     & 0.144 & 0.12     & 97.06 & 0.18     & /        & /     & /                   \\
+                                                                         & Water (q=1)                   & 1.56     & 0.187 & 0.11     & 97.24 & 0.16     & /        & /     & /                   \\ 
+                                                                         
+\bottomrule
+\end{tabular}
+}
+\end{table}
+\renewcommand{\arraystretch}{1}
